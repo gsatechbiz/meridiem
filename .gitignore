@@ -1,0 +1,9 @@
+# Nada do material interno do projeto entra aqui.
+# A raiz deste repositorio e a pasta site/; os documentos internos
+# (estrategia, brandbook, apresentacoes) ficam fora dela, de proposito.
+
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+node_modules/
