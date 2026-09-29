@@ -4,17 +4,56 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Meridiem Inc. — Inteligência para decidir, com clareza.</title>
-<meta name="description" content="Meridiem Inc., consultoria de inteligência e estratégia de marketing em São Paulo. Reduzimos a incerteza antes da decisão: sinais, leitura, hipóteses e caminhos.">
+<meta name="description" content="Meridiem Inc., Growth Partner com foco em soluções de inteligência, em São Paulo. Conecta mercado, negócio e comportamento para transformar informação em decisões de crescimento.">
 <meta name="theme-color" content="#12307D">
+<link rel="canonical" href="https://meridieminc.com.br/">
 <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjIyIiBmaWxsPSIjMTI0QkNDIi8+PHBhdGggZD0iTTUwIDEyIDY0IDUwSDM2WiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0zNiA1MGgyOEw1MCA4OFoiIGZpbGw9IiNEOTQ1NkMiLz48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI2LjUiIGZpbGw9IiMxMjRCQ0MiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIzIi8+PC9zdmc+Cg==">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Meridiem Inc.">
+<meta property="og:url" content="https://meridieminc.com.br/">
 <meta property="og:title" content="Meridiem Inc. — Inteligência para decidir, com clareza.">
-<meta property="og:description" content="Consultoria de Inteligência e Estratégia de Marketing. O marketing aprendeu a medir o consumidor melhor do que aprendeu a entendê-lo.">
+<meta property="og:description" content="Growth Partner com foco em soluções de inteligência. O marketing aprendeu a medir o consumidor melhor do que aprendeu a entendê-lo.">
 <meta property="og:locale" content="pt_BR">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,700&family=Carlito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<meta property="og:image" content="https://meridieminc.com.br/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Meridiem Inc. — Inteligência para decidir, com clareza.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/arimo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/carlito-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <style>
 /* Meridiem Inc. — site institucional */
+
+/* Fontes servidas pelo próprio site. Arimo substitui Arial e Carlito substitui
+   Calibri, com as mesmas métricas. Licenças em fonts/LICENSES.md. */
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(fonts/arimo-latin.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Carlito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/carlito-400-latin.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Carlito';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/carlito-400i-latin.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Carlito';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/carlito-700-latin.woff2) format('woff2');
+}
 
 :root {
   --navy: #12307D;
@@ -38,6 +77,10 @@
   --nav-h: 68px;
 
   --ease-out: cubic-bezier(.16, 1, .3, 1);
+
+  --z-base: 1;
+  --z-nav: 50;
+  --z-skip: 100;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -51,6 +94,7 @@ html {
 
 body {
   margin: 0;
+  text-wrap: pretty;
   background: var(--peach);
   color: var(--navy);
   font-family: var(--body);
@@ -88,7 +132,7 @@ button { font: inherit; color: inherit; }
 }
 
 .skip {
-  position: absolute; left: 12px; top: -60px; z-index: 100;
+  position: absolute; left: 12px; top: -60px; z-index: var(--z-skip);
   background: var(--peach); color: var(--navy); padding: 10px 16px;
   font-family: var(--display); font-weight: 700; text-decoration: none;
 }
@@ -199,6 +243,7 @@ button { font: inherit; color: inherit; }
   display: inline-flex;
   align-items: center;
   gap: 14px;
+  transform: translateY(0);
   min-height: 56px;
   padding: 16px 26px;
   border: 0;
@@ -213,6 +258,8 @@ button { font: inherit; color: inherit; }
 }
 .btn svg { width: 22px; height: 22px; transition: transform .35s var(--ease-out); }
 .btn:hover svg { transform: translateX(5px); }
+.btn:active { transform: translateY(1px); }
+.btn:disabled:active { transform: none; }
 
 .btn--primary { background: var(--magenta); color: var(--white); }
 .btn--primary:hover { background: var(--navy); }
@@ -233,6 +280,7 @@ button { font: inherit; color: inherit; }
   transition: text-underline-offset .25s var(--ease-out);
 }
 .link:hover { text-underline-offset: 9px; }
+.link:active { text-underline-offset: 6px; }
 .link--light { color: var(--white); text-decoration-color: var(--peach); }
 
 /* ---------- Navegação ---------- */
@@ -240,7 +288,7 @@ button { font: inherit; color: inherit; }
 .nav {
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: var(--z-nav);
   background: var(--navy);
   color: var(--white);
 }
@@ -302,6 +350,7 @@ button { font: inherit; color: inherit; }
   transition: background-color .25s var(--ease-out), color .25s var(--ease-out);
 }
 .nav__cta:hover { background: var(--white); color: var(--navy); }
+.nav__cta:active { transform: translateY(1px); }
 
 .nav__toggle {
   display: none;
@@ -499,6 +548,7 @@ button { font: inherit; color: inherit; }
 }
 .instrument__reset {
   background: none; border: 0; padding: 4px 0; cursor: pointer;
+  min-height: 44px;
   color: var(--peach);
   text-decoration: underline; text-underline-offset: 5px;
   font-size: .9375rem;
@@ -676,24 +726,36 @@ figure circle.key { stroke: var(--magenta); fill: var(--magenta); }
 .mission .support--light { margin-top: 16px; }
 .branch svg { width: 100%; height: auto; max-height: 440px; }
 
-/* ---------- Consumidor ---------- */
+/* ---------- Três eixos ---------- */
 
-.orbit svg { width: 100%; height: auto; max-height: 520px; overflow: visible; color: var(--navy); }
-.orbit .ring { fill: none; stroke: var(--blue); stroke-width: 1.5; opacity: 1; }
-.orbit .ring--thin { stroke-dasharray: 3 7; opacity: .7; }
-.orbit .core { fill: var(--navy); stroke: none; }
-.orbit .core__label {
-  fill: var(--peach);
+.axes svg { width: 100%; height: auto; max-height: 520px; overflow: visible; color: var(--navy); }
+.axes__lobe {
+  fill: var(--blue);
+  fill-opacity: .08;
+  stroke: var(--blue);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+.axes__cross { fill: var(--magenta); fill-opacity: .22; stroke: none; }
+.axes__label {
+  fill: var(--navy);
   font-family: var(--display);
   font-weight: 700;
-  font-size: 17px;
-  letter-spacing: .12em;
+  font-size: 15px;
+  letter-spacing: .08em;
 }
 @media (prefers-reduced-motion: no-preference) {
-  .orbit .ring--thin { animation: spin 60s linear infinite; transform-origin: 230px 210px; }
-  .js .orbit[data-draw] .ring, .js .orbit[data-draw] .core { opacity: 1; }
+  .js .axes[data-draw] .axes__lobe {
+    opacity: 0;
+    transition: opacity 1s var(--ease-out);
+  }
+  .js .axes[data-draw] .axes__lobe:nth-of-type(2) { transition-delay: .25s; }
+  .js .axes[data-draw] .axes__lobe:nth-of-type(3) { transition-delay: .5s; }
+  .js .axes[data-draw].is-drawn .axes__lobe { opacity: 1; }
+  .js .axes[data-draw] .axes__cross { opacity: 0; transition: opacity .9s var(--ease-out) 1s; }
+  .js .axes[data-draw].is-drawn .axes__cross { opacity: 1; }
+  .js .axes[data-draw] .axes__label { transition-delay: 1.2s; }
 }
-@keyframes spin { to { transform: rotate(360deg); } }
 
 /* ---------- Jornada ---------- */
 
@@ -741,6 +803,7 @@ figure circle.key { stroke: var(--magenta); fill: var(--magenta); }
 }
 .segmented button[aria-pressed="true"] { background: var(--peach); color: var(--navy); }
 .segmented button:hover:not([aria-pressed="true"]) { color: var(--white); }
+.segmented button:active { transform: translateY(1px); }
 
 .segmented--dark { box-shadow: inset 0 0 0 2px var(--navy); margin: 0 0 28px; }
 .segmented--dark button { color: var(--navy); }
@@ -780,8 +843,8 @@ figure circle.key { stroke: var(--magenta); fill: var(--magenta); }
 .reading__qs li:nth-child(3)::before { left: auto; right: 0; background: var(--magenta); }
 .reading__qs li.is-key { color: var(--magenta); }
 .reading__line { width: 100%; height: clamp(90px, 13vw, 170px); overflow: visible; }
-.reading .leader { fill: none; stroke: var(--blue); stroke-width: 1; vector-effect: non-scaling-stroke; }
-.reading .leader--key { stroke: var(--magenta); }
+.leader { fill: none; stroke: var(--blue); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.leader--key { stroke: var(--magenta); }
 .pull {
   margin-top: clamp(56px, 7vw, 96px);
   max-width: 40ch;
@@ -877,7 +940,8 @@ figure circle.key { stroke: var(--magenta); fill: var(--magenta); }
   padding: 0 0 36px 36px;
 }
 .matrix__plot svg { width: 100%; height: auto; overflow: visible; }
-.matrix__zone { fill: var(--magenta); opacity: .1; }
+.matrix__zone { fill: var(--magenta); opacity: .16; }
+.matrix__zone--later { fill: var(--terracotta); opacity: .07; }
 .matrix__axis { fill: none; stroke: var(--navy); stroke-width: 2; }
 .matrix__mid { fill: none; stroke: var(--navy); stroke-width: 1; stroke-dasharray: 3 6; opacity: .45; }
 .matrix__zone-label {
@@ -887,10 +951,13 @@ figure circle.key { stroke: var(--magenta); fill: var(--magenta); }
   letter-spacing: .24em;
   fill: var(--navy);
 }
+.matrix__zone-label--later { fill: var(--terracotta-ink); }
 .matrix__dots g { transition: transform .9s var(--ease-out); }
 .matrix__dots circle { fill: var(--peach); stroke: var(--navy); stroke-width: 2; transition: fill .5s, stroke .5s, r .5s; }
 .matrix__dots g.is-priority circle { fill: var(--magenta); stroke: var(--magenta); }
+.matrix__dots g.is-later circle { fill: var(--terracotta); stroke: var(--terracotta-ink); }
 .matrix__dots text {
+  font-variant-numeric: tabular-nums;
   font-family: var(--display);
   font-weight: 700;
   font-size: 15px;
@@ -988,11 +1055,11 @@ figure circle.key { stroke: var(--magenta); fill: var(--magenta); }
   display: grid;
   grid-template-columns: minmax(0, 1fr);
 }
-.display--close { color: var(--white); max-width: 15ch; font-size: clamp(2.5rem, 1rem + 5vw, 5.75rem); position: relative; z-index: 1; }
+.display--close { color: var(--white); max-width: 15ch; font-size: clamp(2.5rem, 1rem + 5vw, 5.75rem); position: relative; z-index: var(--z-base); }
 .display--close em { color: var(--peach); }
 .close__block {
   position: relative;
-  z-index: 1;
+  z-index: var(--z-base);
   margin-top: clamp(64px, 8vw, 120px);
   width: min(100%, 760px);
   background: var(--navy);
@@ -1155,8 +1222,8 @@ figure circle.key { stroke: var(--magenta); fill: var(--magenta); }
   .stage.is-key::before { background: var(--magenta); border-color: var(--magenta); }
 
   .discern__fig .lbl--strong { font-size: 34px; }
-  .orbit .lbl { font-size: 19px; }
-  .orbit .lbl--strong { font-size: 16px; }
+  .axes .lbl--strong { font-size: 17px; }
+  .axes .axes__label { font-size: 19px; }
   .journey__nodes text { font-size: 20px; }
 
   .evidence { flex-direction: column; align-items: flex-start; gap: 16px; }
@@ -1212,7 +1279,7 @@ figure circle.key { stroke: var(--magenta); fill: var(--magenta); }
     </a>
     <nav class="nav__links" id="menu" aria-label="Seções">
       <a href="#tese">Tese</a>
-      <a href="#consumidor">Consumidor</a>
+      <a href="#eixos">Eixos</a>
       <a href="#metodo">Método</a>
       <a href="#prioridades">Prioridades</a>
       <a href="#rota">Rota</a>
@@ -1233,7 +1300,7 @@ figure circle.key { stroke: var(--magenta); fill: var(--magenta); }
       <h1 id="hero-title" class="display">O dashboard<br> melhora.<br> <mark>O negócio, não.</mark></h1>
       <span class="rule" aria-hidden="true"></span>
       <p class="lead">Mesmo com a mídia funcionando, investir mais nela nem sempre é a decisão certa.</p>
-      <p class="hero__about">A Meridiem Inc. é uma consultoria de inteligência e estratégia de marketing. Trabalhamos entre o sinal registrado e o significado necessário para decidir.</p>
+      <p class="hero__about">A Meridiem Inc. é um Growth Partner com foco em soluções de inteligência. Conecta mercado, negócio e comportamento para transformar informação em decisões de crescimento.</p>
       <div class="actions">
         <a class="btn btn--primary" href="mailto:comercial@meridieminc.com.br?subject=Agendar%20um%20diagn%C3%B3stico">Agende um diagnóstico <svg aria-hidden="true"><use href="#arrow-right"/></svg></a>
         <a class="link" href="#tese">Como pensamos</a>
@@ -1356,32 +1423,34 @@ figure circle.key { stroke: var(--magenta); fill: var(--magenta); }
     </div>
   </section>
 
-  <!-- Consumidor -->
-  <section class="band band--peach" id="consumidor" aria-labelledby="cons-title">
+  <!-- Três eixos -->
+  <section class="band band--peach" id="eixos" aria-labelledby="eixos-title">
     <div class="wrap split split--wide-fig">
       <div>
-        <h2 id="cons-title" class="title">Colocar o consumidor no centro não é personalizar mais.</h2>
-        <p class="title title--second">É entender melhor como ele descobre, avalia e <mark>escolhe.</mark></p>
-        <p class="support">O consumidor é o centro da leitura.<br>Mercado e negócio ajudam a explicar o contexto das suas escolhas.</p>
+        <h2 id="eixos-title" class="title">A inteligência nasce do cruzamento de mercado, negócio e comportamento.</h2>
+        <p class="support">Mercado informa o contexto. Negócio informa a realidade. Comportamento informa as respostas das pessoas. Nenhum dos três explica sozinho.</p>
+        <p class="support">Comportamento não se limita a quem já é cliente. Cobre quem comprou, quem não comprou e quem abandonou.</p>
       </div>
-      <figure class="orbit" data-draw aria-labelledby="orbit-cap">
-        <svg viewBox="0 0 460 420" aria-hidden="true">
-          <circle class="ring" cx="230" cy="210" r="112"/>
-          <circle class="ring ring--thin" cx="230" cy="210" r="150"/>
-          <path class="solid" d="M92 70 C110 110 120 150 140 170" pathLength="1"/>
-          <path class="solid" d="M392 100 C360 110 340 140 320 160" pathLength="1"/>
-          <path class="solid warm" d="M80 320 C110 300 130 280 146 262" pathLength="1"/>
-          <path class="solid warm" d="M400 330 C360 320 340 300 322 270" pathLength="1"/>
-          <path class="solid warm" d="M270 395 C262 370 256 345 250 318" pathLength="1"/>
-          <circle class="core" cx="230" cy="210" r="96"/>
-          <text class="core__label" x="230" y="216" text-anchor="middle">CONSUMIDOR</text>
-          <g class="node"><circle cx="92" cy="70" r="7"/><text x="92" y="48" text-anchor="middle" class="lbl lbl--strong">MERCADO</text></g>
-          <g class="node"><circle cx="392" cy="100" r="7"/><text x="392" y="78" text-anchor="middle" class="lbl lbl--strong">NEGÓCIO</text></g>
-          <g class="node"><circle cx="80" cy="320" r="6"/><text x="80" y="346" text-anchor="middle" class="lbl">canais</text></g>
-          <g class="node"><circle cx="400" cy="330" r="6"/><text x="400" y="356" text-anchor="middle" class="lbl">influências</text></g>
-          <g class="node"><circle cx="270" cy="395" r="6"/><text x="300" y="400" text-anchor="start" class="lbl">dados</text></g>
+      <figure class="axes" data-draw aria-labelledby="axes-cap">
+        <svg viewBox="0 0 480 440" aria-hidden="true">
+          <defs>
+            <clipPath id="eixo-a"><circle cx="240" cy="150" r="108"/></clipPath>
+            <clipPath id="eixo-b"><circle cx="188" cy="240" r="108" clip-path="url(#eixo-a)"/></clipPath>
+          </defs>
+          <circle class="axes__lobe" cx="240" cy="150" r="108"/>
+          <circle class="axes__lobe" cx="188" cy="240" r="108"/>
+          <circle class="axes__lobe" cx="292" cy="240" r="108"/>
+          <circle class="axes__cross" cx="292" cy="240" r="108" clip-path="url(#eixo-b)"/>
+          <path class="leader" d="M240 34V22"/>
+          <path class="leader" d="M130 372 L117 326"/>
+          <path class="leader" d="M350 372 L363 326"/>
+          <text class="lbl lbl--strong" x="240" y="16" text-anchor="middle">MERCADO</text>
+          <text class="lbl lbl--strong" x="140" y="392" text-anchor="middle">COMPORTAMENTO</text>
+          <text class="lbl lbl--strong" x="350" y="392" text-anchor="middle">NEGÓCIO</text>
+          <text class="axes__label" x="240" y="216" text-anchor="middle">INTELIGÊNCIA</text>
         </svg>
-        <figcaption class="figlabel" id="orbit-cap">Fig. 04 · O consumidor no centro da leitura</figcaption>
+        <figcaption class="figlabel" id="axes-cap">Fig. 04 · Os três eixos da leitura</figcaption>
+        <p class="sr-only">Três círculos sobrepostos, um para mercado, um para negócio e um para comportamento. A inteligência fica onde os três se cruzam.</p>
       </figure>
     </div>
   </section>
@@ -1492,7 +1561,7 @@ figure circle.key { stroke: var(--magenta); fill: var(--magenta); }
     <div class="wrap split split--wide-fig">
       <div>
         <h2 id="prio-title" class="title">Uma boa oportunidade não é, necessariamente, uma boa prioridade.</h2>
-        <p class="formula"><strong>Índice de Viabilidade</strong> = Impacto Estratégico Esperado <span class="times">×</span> Viabilidade de Implementação</p>
+        <p class="formula"><strong>Índice de Viabilidade</strong> = Esforço de execução <span class="times">×</span> Viabilidade</p>
         <p class="claim">Capacidade demonstrada pesa mais do que capacidade declarada.</p>
         <ul class="criteria" role="list" aria-label="Critérios de viabilidade">
           <li>Orçamento</li><li>Equipe</li><li>Tecnologia</li><li>Dados</li><li>Prazo</li>
@@ -1507,14 +1576,16 @@ figure circle.key { stroke: var(--magenta); fill: var(--magenta); }
         </div>
         <div class="matrix__plot">
           <svg viewBox="0 0 400 400" aria-hidden="true">
-            <rect class="matrix__zone" x="200" y="0" width="200" height="200"/>
+            <rect class="matrix__zone" x="200" y="200" width="200" height="200"/>
+            <rect class="matrix__zone matrix__zone--later" x="200" y="0" width="200" height="200"/>
             <path class="matrix__axis" d="M0 0V400H400"/>
             <path class="matrix__mid" d="M200 0V400M0 200H400"/>
-            <text class="matrix__zone-label" x="388" y="24" text-anchor="end">PRIORIDADES</text>
+            <text class="matrix__zone-label" x="388" y="388" text-anchor="end">PRIORIDADES</text>
+            <text class="matrix__zone-label matrix__zone-label--later" x="388" y="24" text-anchor="end">NO HORIZONTE</text>
             <g class="matrix__dots"></g>
           </svg>
-          <span class="matrix__y">Impacto Estratégico Esperado</span>
-          <span class="matrix__x">Viabilidade de Implementação</span>
+          <span class="matrix__y">Esforço de execução</span>
+          <span class="matrix__x">Viabilidade</span>
         </div>
         <p class="matrix__read" aria-live="polite" data-matrix-read></p>
         <figcaption class="figlabel" id="matrix-cap">Fig. 08 · Exemplo conceitual, oportunidades ilustrativas</figcaption>
@@ -1607,7 +1678,7 @@ figure circle.key { stroke: var(--magenta); fill: var(--magenta); }
       <p class="footer__slogan">Inteligência para decidir, com clareza.</p>
     </div>
     <div class="footer__meta">
-      <p>Consultoria de Inteligência e Estratégia de Marketing</p>
+      <p>Growth Partner com foco em soluções de inteligência</p>
       <p>São Paulo, SP</p>
       <p><a href="mailto:comercial@meridieminc.com.br">comercial@meridieminc.com.br</a></p>
     </div>
@@ -1995,18 +2066,18 @@ figure circle.key { stroke: var(--magenta); fill: var(--magenta); }
     const dotsG = matrix.querySelector('.matrix__dots');
     const read = matrix.querySelector('[data-matrix-read]');
     const buttons = [...matrix.querySelectorAll('[data-cap]')];
-    // impacto (0–1) e viabilidade declarada / demonstrada (0–1). Ilustrativo.
+    // esforço de execução (0–1) e viabilidade declarada / demonstrada (0–1). Ilustrativo.
     const OPPS = [
-      { id: 'A', impact: 0.86, declarada: 0.80, demonstrada: 0.28 },
-      { id: 'B', impact: 0.74, declarada: 0.74, demonstrada: 0.70 },
-      { id: 'C', impact: 0.30, declarada: 0.86, demonstrada: 0.82 },
-      { id: 'D', impact: 0.60, declarada: 0.62, demonstrada: 0.34 },
-      { id: 'E', impact: 0.22, declarada: 0.34, demonstrada: 0.22 },
-      { id: 'F', impact: 0.66, declarada: 0.42, demonstrada: 0.62 },
+      { id: 'A', esforco: 0.26, declarada: 0.82, demonstrada: 0.30 },
+      { id: 'B', esforco: 0.44, declarada: 0.70, demonstrada: 0.72 },
+      { id: 'C', esforco: 0.80, declarada: 0.84, demonstrada: 0.80 },
+      { id: 'D', esforco: 0.16, declarada: 0.62, demonstrada: 0.34 },
+      { id: 'E', esforco: 0.66, declarada: 0.28, demonstrada: 0.24 },
+      { id: 'F', esforco: 0.30, declarada: 0.40, demonstrada: 0.62 },
     ];
     const READ = {
-      declarada: 'Pela capacidade declarada, A, B e D parecem prioridades.',
-      demonstrada: 'Pela capacidade demonstrada, A e D perdem viabilidade. B continua prioridade e F entra, porque a execução já provada sustenta mais do que se declarava.',
+      declarada: 'Pela capacidade declarada, A, B e D cabem agora. C fica no horizonte: viável, mas de esforço alto para este momento.',
+      demonstrada: 'Pela capacidade demonstrada, A e D exigem mais do que a empresa mostra que consegue executar. B continua e F entra. C segue no horizonte, não descartada.',
     };
     const X = (v) => v * 400;
     const Y = (i) => 400 - i * 400;
@@ -2016,7 +2087,7 @@ figure circle.key { stroke: var(--magenta); fill: var(--magenta); }
     dotsG.before(trails);
     const els = OPPS.map((o) => {
       if (Math.abs(o.declarada - o.demonstrada) > 0.05) {
-        const x1 = X(o.declarada), x2 = X(o.demonstrada), y = Y(o.impact);
+        const x1 = X(o.declarada), x2 = X(o.demonstrada), y = Y(o.esforco);
         const dir = Math.sign(x2 - x1);
         // termina antes do ponto novo; indo para a esquerda, também passa por fora do rótulo
         const end = dir < 0 ? x2 + 34 : x2 - 13;
@@ -2037,8 +2108,10 @@ figure circle.key { stroke: var(--magenta); fill: var(--magenta); }
       buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.cap === cap)));
       els.forEach(({ o, g }) => {
         const v = o[cap];
-        g.style.transform = `translate(${X(v)}px, ${Y(o.impact)}px)`;
-        g.classList.toggle('is-priority', v >= 0.5 && o.impact >= 0.5);
+        g.style.transform = `translate(${X(v)}px, ${Y(o.esforco)}px)`;
+        // prioridade: viabilidade alta com esforço que cabe agora
+        g.classList.toggle('is-priority', v >= 0.5 && o.esforco <= 0.5);
+        g.classList.toggle('is-later', v >= 0.5 && o.esforco > 0.5);
       });
       read.textContent = READ[cap];
     };
