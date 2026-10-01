@@ -20,31 +20,29 @@ Depois acesse `http://localhost:5173`.
 
 | Arquivo | |
 |---|---|
-| `index.html` | o site inteiro: HTML, CSS, JavaScript e favicon no mesmo arquivo |
+| `index.html` | o site inteiro: HTML, CSS, imagens e favicon no mesmo arquivo |
 | `404.html` | página de endereço não encontrado |
 | `og.png` | imagem de compartilhamento em redes sociais |
-| `fonts/` | Arimo e Carlito em woff2, com as licenças |
+| `fonts/` | Arimo e Carlito em woff2, com as licenças, usadas pela `404.html` |
 
-Não há build, dependências nem chamadas a serviços externos. As fontes são servidas pelo próprio site, então nenhum dado de quem visita sai para terceiros, e a página funciona offline. Quem já tem Arial e Calibri instaladas usa essas, e os arquivos nem chegam a ser baixados.
+Não há build nem dependências. O `index.html` carrega as fontes Archivo e Lato do Google Fonts.
 
 ## Conteúdo
 
-A página apresenta a tese da Meridiem e o método de trabalho, em dez figuras interativas:
+A página segue esta ordem:
 
-| Figura | Assunto |
+| Seção | Assunto |
 |---|---|
-| 01 | O painel onde os indicadores de mídia sobem e o negócio fica estável |
-| 02 | Do registro à pergunta |
-| 03 | Um ponto de partida, vários caminhos |
-| 04 | Os três eixos: mercado, negócio e comportamento |
-| 05 | Ambientes de descoberta, avaliação e escolha |
-| 06 | As perguntas que mudam o caminho |
-| 07 | Do sinal ao caminho |
-| 08 | Índice de Viabilidade: esforço de execução × viabilidade |
-| 09 | Estratégia como processo revisável |
-| 10 | Método, experiência e discernimento |
-
-Os números das figuras 01 e 08 são exemplos conceituais, marcados como ilustrativos na própria página. Não representam resultados de clientes.
+| Hero | Growth Partner com foco em soluções de inteligência |
+| Para quem | Dono de PME, gestor de mídia ou growth, agência independente |
+| A tese | O marketing aprendeu a medir o consumidor melhor do que aprendeu a entendê-lo |
+| As três camadas | Mercado, negócio e comportamento |
+| O método | Oito etapas, da informação à ação |
+| Dois índices | Índice de Viabilidade (etapa do método) e Índice de Esforço (produto) |
+| A camada digital | Prateleira Digital, Digital Discoverability e Digital Activation |
+| Produtos | Leitura de mercado, leitura de demanda e decisão |
+| Como você contrata | Projeto ou Parceria Contínua, com pool de parceiros |
+| Fechamento | Melhorar a decisão antes de melhorar o indicador |
 
 ## Publicação
 
@@ -52,7 +50,7 @@ O site é servido pelo GitHub Pages a partir do branch `main`, na raiz. O `.noje
 
 ## Acessibilidade
 
-O site tem como alvo o WCAG 2.1 AA. As combinações de peach e branco sobre magenta aparecem apenas em texto grande, onde atendem ao critério. A página respeita `prefers-reduced-motion`, funciona pelo teclado e traz descrições em texto para cada diagrama.
+A página respeita `prefers-reduced-motion`, tem tema claro e escuro e funciona pelo teclado.
 
 ## Contato
 
