@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfólio de produtos Ojas</title>
+<meta name="description" content="Ojas Sanctuary · Recomendação final de portfólio de produtos · novembro de 2026">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://meridieminc.com.br/ojas-sanctuary/definicao-produtos/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Meridiem Inc.">
+<meta property="og:url" content="https://meridieminc.com.br/ojas-sanctuary/definicao-produtos/">
+<meta property="og:title" content="Ojas Sanctuary: definição do portfólio de produtos">
+<meta property="og:description" content="Ojas Sanctuary · Recomendação final de portfólio de produtos · novembro de 2026">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Marcellus&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-cream:#FFFEF5; --ink:#333331; --sand:#D6CDB3; --black:#080808;
+  --ink-60:rgba(51,51,49,.6); --ink-40:rgba(51,51,49,.4); --ink-15:rgba(51,51,49,.15);
+  --f-it:"Cardinal Fruit","Cormorant Garamond",serif;
+  --f-caps:"NE SPQR","Marcellus","Cinzel",serif;
+  --f-body:"PP Neue Montreal","Inter",sans-serif;
+  --rule:1px solid var(--ink);
+  --hair:1px solid var(--ink-15);
+  --ease:cubic-bezier(.16,1,.3,1);
+  --W:1600px; --H:900px; --pad-x:104px;
+}
+*{box-sizing:border-box;margin:0;padding:0;border-radius:0}
+html,body{height:100%}
+body{background:var(--bg-cream);color:var(--ink);font-family:var(--f-body);font-weight:300;font-size:21px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow:hidden}
+::selection{background:var(--ink);color:var(--bg-cream)}
+:focus-visible{outline:1px solid var(--ink);outline-offset:4px}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;letter-spacing:inherit}
+b,strong{font-weight:600}
+
+/* ---------- Palco 16:9 ---------- */
+.viewport{position:fixed;inset:0;overflow:hidden}
+.stage{position:absolute;left:50%;top:50%;width:var(--W);height:var(--H);transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center center;background:var(--bg-cream)}
+
+/* Cabeçalho e trilho compartilhados */
+.chrome-top,.chrome-bottom{position:absolute;left:var(--pad-x);right:var(--pad-x);display:grid;grid-template-columns:1fr auto 1fr;align-items:center;font-size:13px;font-weight:600;letter-spacing:1.6px;z-index:3}
+.chrome-top{top:40px;padding-bottom:16px;border-bottom:var(--rule)}
+.chrome-top .brand{font-family:var(--f-caps);font-weight:400;font-size:17px;letter-spacing:4px}
+.chrome-top .chapter{text-align:center}
+.chrome-top .scope{text-align:right}
+.chrome-bottom{bottom:32px;padding-top:14px}
+.chrome-bottom .left{display:flex;gap:28px}
+.chrome-bottom .right{display:flex;gap:28px;justify-content:flex-end}
+.chrome-bottom .count{font-variant-numeric:tabular-nums;text-align:center;min-width:120px}
+.paren{white-space:nowrap;transition:opacity .2s}
+.paren:hover{opacity:.55}
+.paren[disabled]{opacity:.25;cursor:default}
+.track{position:absolute;left:0;right:0;top:0;height:1px;background:var(--ink-15)}
+.track .fill{position:absolute;left:0;top:0;height:1px;background:var(--ink);width:0;transition:width .6s var(--ease)}
+.track .tick{position:absolute;top:-4px;width:1px;height:9px;background:var(--ink)}
+
+/* ---------- Slides ---------- */
+.slide{position:absolute;inset:0;padding:136px var(--pad-x) 118px;display:flex;flex-direction:column;opacity:0;visibility:hidden;transition:opacity .55s var(--ease),visibility 0s linear .55s}
+.slide.is-active{opacity:1;visibility:visible;transition:opacity .55s var(--ease),visibility 0s}
+.slide > *{transition:transform .8s var(--ease),opacity .8s var(--ease)}
+.slide:not(.is-active) > *{transform:translateY(14px);opacity:0}
+.slide.is-active > :nth-child(2){transition-delay:.08s}
+.slide.is-active > :nth-child(3){transition-delay:.16s}
+.slide.is-active > :nth-child(4){transition-delay:.24s}
+.fill-y{flex:1;min-height:0}
+.center{justify-content:center;align-items:center;text-align:center}
+.bottom{margin-top:auto}
+
+/* Título composto: assinatura da marca */
+.title{display:flex;flex-direction:column;margin-bottom:40px}
+.title .it{font-family:var(--f-it);font-style:italic;font-weight:400;font-size:40px;line-height:1.15}
+.title .caps{font-family:var(--f-caps);font-weight:400;font-size:58px;line-height:1.15;letter-spacing:.07em;text-transform:uppercase;text-wrap:balance}
+.title.xl .it{font-size:50px}
+.title.xl .caps{font-size:80px}
+.center .title{align-items:center}
+
+.lbl{font-size:13px;font-weight:600;letter-spacing:1.6px;text-transform:uppercase;line-height:1.5}
+.src{font-size:14px;line-height:1.5;color:rgba(51,51,49,.82)}
+.lead{font-size:24px;line-height:1.55;max-width:62ch}
+.note{font-family:var(--f-it);font-style:italic;font-size:27px;line-height:1.4;max-width:58ch}
+.statement{font-family:var(--f-it);font-style:italic;font-weight:300;font-size:58px;line-height:1.22;max-width:24ch;text-wrap:balance}
+.statement em{font-style:normal;font-family:var(--f-caps);font-size:.72em;letter-spacing:.06em;text-transform:uppercase}
+
+.rule{border-top:var(--rule)}
+.pt{padding-top:28px}
+
+/* Colunas */
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:88px}
+.cols.w-6-4{grid-template-columns:1.35fr 1fr}
+.cols.w-4-6{grid-template-columns:1fr 1.35fr}
+.col-h{padding-bottom:12px;border-bottom:var(--rule);margin-bottom:6px}
+
+/* Lista editorial (como a lista de serviços do site) */
+.rows{list-style:none}
+.rows li{display:grid;grid-template-columns:96px 1fr auto;gap:24px;align-items:baseline;padding:17px 0;border-bottom:var(--hair)}
+.rows li:first-child{border-top:var(--rule)}
+.rows li:last-child{border-bottom:var(--rule)}
+.rows .n{font-size:13px;font-weight:600;letter-spacing:1.6px}
+.rows .t{font-size:22px;line-height:1.45}
+.rows .t b{font-weight:600}
+.rows .r{font-size:13px;font-weight:600;letter-spacing:1.6px;text-transform:uppercase;text-align:right;white-space:nowrap}
+.rows.named .t{font-family:var(--f-it);font-style:italic;font-size:34px;line-height:1.2}
+.rows.named li{padding:19px 0}
+.rows.compact li{padding:12px 0;grid-template-columns:1fr}
+.rows.compact .t{font-size:20px}
+.rows.nonum li{grid-template-columns:1fr}
+.rows.two li{grid-template-columns:56px 1fr}
+.col-h + .rows li:first-child{border-top:0}
+.rows.roomy li{padding:24px 0}
+.rows.roomy .t{font-size:25px}
+
+/* Números */
+.figs{display:grid;border-top:var(--rule);border-bottom:var(--rule)}
+.figs.c3{grid-template-columns:repeat(3,1fr)}
+.figs.c2{grid-template-columns:repeat(2,1fr)}
+.fig{padding:30px 36px 28px 0;display:flex;flex-direction:column;gap:12px}
+.fig + .fig{border-left:var(--hair);padding-left:36px}
+.fig .v{white-space:nowrap;font-family:var(--f-caps);font-size:84px;line-height:1;letter-spacing:.02em;font-variant-numeric:lining-nums}
+.fig .v small{font-size:.5em;letter-spacing:.04em}
+.fig .d{font-size:20px;line-height:1.45;max-width:30ch}
+.figs.grid6{grid-template-columns:repeat(3,1fr);border-bottom:0}
+.figs.grid6 .fig{border-bottom:var(--rule);padding-top:22px;padding-bottom:22px}
+.figs.grid6 .fig:nth-child(3n+1){border-left:0;padding-left:0}
+.figs.grid6 .v{font-size:64px}
+.figs.grid6 .d{font-size:18px}
+
+/* Tabela */
+table{width:100%;border-collapse:collapse;font-size:18px;line-height:1.45;font-variant-numeric:tabular-nums}
+th{text-align:left;font-size:12.5px;font-weight:600;letter-spacing:1.6px;text-transform:uppercase;padding:0 28px 12px 0;border-bottom:var(--rule);vertical-align:bottom}
+td{padding:13px 28px 13px 0;border-bottom:var(--hair);vertical-align:top}
+tr:last-child td{border-bottom:var(--rule)}
+td.it{font-family:var(--f-it);font-style:italic;font-size:25px;line-height:1.2}
+td.val{font-family:var(--f-body);font-weight:400;font-size:19px;letter-spacing:0;white-space:nowrap;font-variant-numeric:tabular-nums}
+
+/* Blocos pequenos */
+.block + .block{margin-top:34px}
+.cols > .block + .block{margin-top:0}
+.block p.lbl{font-size:13px;line-height:1.5}
+.block p.note{line-height:1.35}
+.block p.src{font-size:13px;line-height:1.5}
+.block p{font-size:20px;line-height:1.55}
+.block p + p{margin-top:10px}
+.qs{list-style:none;border-top:var(--rule)}
+.qs li{font-family:var(--f-it);font-style:italic;font-size:38px;line-height:1.2;padding:18px 0;border-bottom:var(--hair)}
+.qs li:last-child{border-bottom:var(--rule)}
+.goals{display:grid;grid-template-columns:repeat(4,1fr);border-top:var(--rule);border-bottom:var(--rule);margin-bottom:34px}
+.goals div{padding:16px 24px 16px 0;font-family:var(--f-it);font-style:italic;font-size:26px;line-height:1.2}
+.goals div + div{border-left:var(--hair);padding-left:24px}
+.head-row{display:flex;justify-content:space-between;align-items:flex-end;gap:48px}
+.verdict{font-size:13px;font-weight:600;letter-spacing:1.6px;text-transform:uppercase;text-align:right;margin-bottom:48px;display:flex;flex-direction:column;gap:6px}
+.verdict span{font-family:var(--f-caps);font-weight:400;font-size:34px;letter-spacing:.04em;line-height:1}
+
+/* Capa */
+.cover .title{margin:0}
+.cover .title .it{font-size:48px;margin-bottom:6px}
+.cover .meta span{white-space:nowrap}
+.cover .meta .sep{font-style:normal}
+.cover .meta{margin-top:44px;padding-top:26px;border-top:var(--rule);min-width:560px;font-size:15px;font-weight:600;letter-spacing:2px;text-transform:uppercase}
+
+/* Encerramento em areia */
+.slide.sand{background:var(--sand)}
+.stage.on-sand{background:var(--sand)}
+.mono{display:flex;align-items:center;gap:40px;margin-top:auto;padding-top:28px;border-top:var(--rule)}
+.mono .big{font-family:var(--f-caps);font-size:120px;line-height:.8;letter-spacing:0}
+.mono .tag{font-size:13px;font-weight:600;letter-spacing:2.4px;line-height:1.9;text-transform:uppercase}
+.mono .tag i{font-family:var(--f-it);font-weight:400;font-size:20px;letter-spacing:0;text-transform:none}
+
+/* Índice */
+.index{position:absolute;inset:0;background:var(--bg-cream);z-index:5;padding:136px var(--pad-x) 118px;display:flex;flex-direction:column;opacity:0;visibility:hidden;transition:opacity .4s var(--ease),visibility 0s linear .4s}
+.index.open{opacity:1;visibility:visible;transition:opacity .4s var(--ease),visibility 0s}
+.index .title{margin-bottom:24px}
+.index ol{list-style:none;columns:2;column-gap:88px;border-top:var(--rule)}
+.index li{break-inside:avoid;border-bottom:var(--hair)}
+.index a{display:grid;grid-template-columns:84px 1fr;gap:16px;align-items:baseline;padding:11px 0;color:inherit;text-decoration:none;transition:opacity .2s}
+.index a:hover{opacity:.55}
+.index a[aria-current="true"] .t{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
+.index .n{font-size:12px;font-weight:600;letter-spacing:1.6px}
+.index .t{font-family:var(--f-it);font-style:italic;font-size:27px;line-height:1.2}
+.hint{font-size:13px;color:rgba(51,51,49,.82);margin-top:auto;padding-top:18px}
+
+/* ---------- Modo fluxo (celular / retrato estreito) ---------- */
+html.flow body{overflow:auto;font-size:16px}
+html.flow .viewport{position:static;display:block;overflow:visible}
+html.flow .stage{position:static;width:auto;height:auto;transform:none}
+html.flow .chrome-top,html.flow .chrome-bottom,html.flow .index{display:none}
+html.flow .slide{position:relative;opacity:1;visibility:visible;padding:56px 16px 48px;border-bottom:var(--rule);min-height:auto}
+html.flow .slide > *{transform:none!important;opacity:1!important}
+html.flow .slide::before{content:attr(data-ch);display:block;font-size:11px;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;padding-bottom:10px;border-bottom:var(--rule);margin-bottom:28px}
+html.flow .slide.cover{min-height:min(88vh,720px)}
+html.flow .slide.cover::before{margin-bottom:auto}
+html.flow .slide.cover .meta span{white-space:nowrap}
+.cover .meta .sep{font-style:normal}
+.cover .meta{margin-bottom:auto}
+html.flow .slide.cover::before{content:"OJAS SANCTUARY";font-family:var(--f-caps);font-weight:400;letter-spacing:3px;font-size:14px;align-self:stretch;text-align:left}
+html.flow .title{margin-bottom:24px}
+html.flow .title .it{font-size:25px}
+html.flow .title .caps{font-size:30px;letter-spacing:.05em}
+html.flow .title.xl .it,html.flow .cover .title .it{font-size:28px}
+html.flow .title.xl .caps{font-size:36px}
+html.flow .cover .meta span{white-space:nowrap}
+.cover .meta .sep{font-style:normal}
+.cover .meta{min-width:0;width:100%;font-size:11px;letter-spacing:1.4px}
+html.flow .statement{font-size:32px}
+html.flow .lead{font-size:17px}
+html.flow .note{font-size:20px}
+html.flow .cols,html.flow .cols.w-6-4,html.flow .cols.w-4-6{grid-template-columns:1fr;gap:36px}
+html.flow .rows li{grid-template-columns:52px 1fr;gap:12px;padding:12px 0}
+html.flow .rows .r{grid-column:2;text-align:left;white-space:normal;font-size:11px}
+html.flow .rows .t{font-size:16px}
+html.flow .rows.named .t{font-size:24px}
+html.flow .rows.compact li,html.flow .rows.nonum li{grid-template-columns:1fr}
+html.flow .rows.compact .t{font-size:16px}
+html.flow .figs.c3,html.flow .figs.c2,html.flow .figs.grid6{grid-template-columns:1fr}
+html.flow .fig,html.flow .figs.grid6 .fig{padding:20px 0;border-left:0!important;padding-left:0!important}
+html.flow .fig + .fig{border-top:var(--hair)}
+html.flow .figs.grid6 .fig{border-bottom:0}
+html.flow .figs.grid6{border-bottom:var(--rule)}
+html.flow .fig .v{font-size:52px}
+html.flow .figs.grid6 .v{font-size:44px}
+html.flow .fig .d{font-size:16px}
+html.flow .block p{font-size:16px}
+html.flow .qs li{font-size:25px}
+html.flow .goals{grid-template-columns:1fr 1fr}
+html.flow .goals div{font-size:19px;padding:12px 12px 12px 0}
+html.flow .goals div + div{padding-left:0;border-left:0}
+html.flow .goals div:nth-child(even){padding-left:12px;border-left:var(--hair)}
+html.flow .goals div:nth-child(n+3){border-top:var(--hair)}
+html.flow table,html.flow tbody,html.flow tr,html.flow td{display:block;width:auto!important}
+html.flow thead{display:none}
+html.flow table{font-size:15px}
+html.flow tr{padding:14px 0;border-bottom:var(--hair)}
+html.flow tr:first-child{border-top:var(--rule)}
+html.flow tr:last-child{border-bottom:var(--rule)}
+html.flow td,html.flow tr:last-child td{border:0;padding:3px 0}
+html.flow td:first-child{font-family:var(--f-it);font-style:italic;font-size:19px;line-height:1.25}
+html.flow td[data-l]:not(:first-child)::before{content:attr(data-l);display:block;font-family:var(--f-body);font-style:normal;font-size:10.5px;font-weight:600;letter-spacing:1.3px;text-transform:uppercase;margin-top:8px}
+html.flow .head-row{display:block}
+html.flow .verdict{text-align:left;margin:-8px 0 24px;font-size:11px}
+html.flow .verdict span{font-size:24px}
+html.flow td.it{font-size:19px}
+html.flow td.val{font-size:17px}
+html.flow .mono .big{font-size:72px}
+html.flow .mono{gap:20px}
+html.flow .fill-y{flex:none}
+
+@media (prefers-reduced-motion:reduce){
+  .slide,.slide > *,.index,.track .fill{transition:none!important}
+  .slide:not(.is-active) > *{transform:none}
+}
+
+/* ---------- Impressão / PDF: um slide por página ---------- */
+@page{size:1600px 900px;margin:0}
+@media print{
+  body{overflow:visible}
+  .viewport{position:static;display:block}
+  .stage{position:static;transform:none!important;height:auto}
+  .chrome-top,.chrome-bottom,.index{display:none}
+  html,body{background:var(--bg-cream);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .slide{position:relative;inset:auto;width:1600px;height:900px;overflow:hidden;opacity:1!important;visibility:visible!important;transition:none!important;break-after:page;break-inside:avoid;page-break-after:always;padding-top:96px}
+  .slide:last-of-type{break-after:auto;page-break-after:auto}
+  .slide > *{transform:none!important;opacity:1!important;transition:none!important}
+  .slide.sand{background:var(--sand)!important}
+}
+
+/* ---------- Acréscimos do deck de portfólio ---------- */
+.figs.grid6.sm .v{font-size:46px;font-family:var(--f-body);font-weight:300;letter-spacing:-.01em}
+.figs.grid6.sm .lbl{margin-bottom:-2px}
+table.dense{font-size:16.5px;line-height:1.42}
+table.dense td{padding:11px 24px 11px 0}
+table.dense td.it{font-size:22px}
+.cols > table{align-self:start}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:var(--rule);border-bottom:var(--rule);margin-top:24px}
+.facts div{padding:14px 28px 14px 0}
+.facts div + div{border-left:var(--hair);padding-left:28px}
+.facts p{font-size:17px;line-height:1.45}
+.facts p.lbl{font-size:12px;margin-bottom:4px}
+.slide .note{font-size:25px}
+.slide.tight .title{margin-bottom:22px}
+.slide.tight .note{font-size:22px;line-height:1.35}
+.slide.tight .block p{font-size:18px}
+.slide.tight .block + .block{margin-top:20px}
+.slide.tight .rows.compact li{padding:9px 0}
+.slide.tight .rows.compact .t{font-size:18px}
+.slide.tight .rows .t{font-size:21px}
+.slide.tight .pt{padding-top:20px}
+html.flow .slide.tight .note{font-size:19px}
+html.flow .slide.tight .rows .t{font-size:16px}
+html.flow .facts{grid-template-columns:1fr}
+html.flow .facts div{padding:12px 0;border-left:0!important;padding-left:0!important}
+html.flow .facts div + div{border-top:var(--hair)}
+html.flow .facts p{font-size:15px}
+html.flow table.dense td.it{font-size:19px}
+html.flow .slide .note{font-size:19px}
+.rows.snug li{padding:12px 0}
+th.rowh{text-align:left;font-size:16.5px;font-weight:300;letter-spacing:0;text-transform:none;line-height:1.42;padding:11px 24px 11px 0;border-bottom:var(--hair);vertical-align:top}
+th.rowh.it{font-family:var(--f-it);font-style:italic;font-weight:400;font-size:22px;line-height:1.2}
+th.rowh b{font-weight:600}
+tr:last-child th.rowh{border-bottom:var(--rule)}
+table caption{font-size:14px}
+html.flow th.rowh,html.flow tr:last-child th.rowh{display:block;border:0;padding:3px 0;font-family:var(--f-it);font-style:italic;font-size:19px;line-height:1.25}
+html.flow caption{display:block;font-size:13px}
+.slide.tight .block p.lbl{font-size:13px}
+.index ol{columns:3;column-gap:56px}
+.index a{grid-template-columns:64px 1fr;gap:10px;padding:9px 0}
+.index .t{font-size:21px}
+.figs.wide .d{max-width:none}
+.figs.wide .fig{padding-top:14px!important;padding-bottom:14px!important;gap:6px}
+.slide.tight .cols > .block + .block{margin-top:0}
+.cols.three{grid-template-columns:repeat(3,1fr);gap:56px}
+.cols.three .rows.compact .t{font-size:18px}
+.slide.tight .fill-y .rows.compact li{padding:7px 0}
+.slide.tight .rows.roles li{padding:9px 0}
+.rows.roles .t{font-size:18px;line-height:1.4}
+.pillar .word{font-family:var(--f-it);font-style:italic;font-size:44px;line-height:1.15;margin:14px 0 12px}
+html.flow .cols.three{grid-template-columns:1fr;gap:36px}
+html.flow .pillar .word{font-size:30px}
+</style>
+</head>
+<body>
+<div class="viewport">
+<main class="stage" id="stage" aria-roledescription="apresentação" aria-label="Portfólio de produtos da Ojas Sanctuary">
+
+  <header class="chrome-top" aria-hidden="true">
+    <span class="brand">OJAS SANCTUARY</span>
+    <span class="chapter" id="chapter"></span>
+    <span class="scope">PORTFÓLIO DE PRODUTOS</span>
+  </header>
+
+  <!-- 01 Capa -->
+  <section class="slide cover center" data-ch="Abertura" data-title="Capa">
+    <h1 class="title xl">
+      <span class="it">três produtos sobre um só método</span>
+      <span class="caps">Portfólio de produtos</span>
+    </h1>
+    <p class="meta"><span>Recomendação final</span><i class="sep"> &nbsp;·&nbsp; </i><span>Gustavo para Luciana</span><i class="sep"> &nbsp;·&nbsp; </i><span>Novembro de 2026</span></p>
+  </section>
+
+  <!-- 02 Recomendação -->
+  <section class="slide center" data-ch="Abertura" data-title="A recomendação">
+    <p class="lbl" style="margin-bottom:28px">A recomendação</p>
+    <p class="statement">Um portfólio de três produtos, todos sobre o mesmo método: <em>o Ayurveda aplicado à recuperação</em> de quem vive sob pressão.</p>
+    <p class="lead" style="margin-top:40px">Os três são os mesmos em todos os países. Mudam a língua, quem aplica no dia a dia, o preço e o argumento de venda. Comparamos nove produtos possíveis em seis países, e esses três ficaram entre os mais bem avaliados. Cada um ganha uma versão para mulheres de 40 a 60 anos.</p>
+  </section>
+
+  <!-- Roteiro -->
+  <section class="slide tight" data-ch="Abertura" data-title="O caminho da conversa">
+    <h2 class="title"><span class="it">seis perguntas, nesta ordem</span><span class="caps">O caminho da conversa</span></h2>
+    <ol class="rows">
+      <li><span class="n">NO.O1</span><span class="t"><b>Quem compra?</b> Os mercados, os clientes e os cargos que decidem</span><span></span></li>
+      <li><span class="n">NO.O2</span><span class="t"><b>O que oferecer?</b> Os três produtos e como um leva ao outro</span><span></span></li>
+      <li><span class="n">NO.O3</span><span class="t"><b>Por que esses três?</b> A comparação e o potencial de ganho</span><span></span></li>
+      <li><span class="n">NO.O4</span><span class="t"><b>Qual público pede uma versão própria?</b> Mulheres de 40 a 60 anos</span><span></span></li>
+      <li><span class="n">NO.O5</span><span class="t"><b>Como a Ojas se posiciona?</b> Diferencial, temas, linguagem e o que mostrar</span><span></span></li>
+      <li><span class="n">NO.O6</span><span class="t"><b>O que muda em cada país?</b> Oportunidades e pontos de atenção</span><span></span></li>
+    </ol>
+  </section>
+
+  <!-- 03 Mercados -->
+  <section class="slide tight" data-ch="NO.O1 · A pesquisa" data-title="Oito países">
+    <h2 class="title"><span class="it">há compra de bem-estar em todos os mercados, de formas diferentes</span><span class="caps">Oito países</span></h2>
+    <div class="figs grid6 sm">
+      <div class="fig"><span class="lbl">Brasil</span><span class="v"><small>US$</small> 0,45 a 1,6 <small>BI</small></span><span class="d">bilhões de dólares por ano, com crescimento de 4% a 5,7% ao ano</span></div>
+      <div class="fig"><span class="lbl">EUA</span><span class="v"><small>US$</small> 17,6 a 23,8 <small>BI</small></span><span class="d">bilhões de dólares em 2026. As empresas trocaram programas gerais por ações focadas, como apoio aos líderes</span></div>
+      <div class="fig"><span class="lbl">Reino Unido</span><span class="v">£673 <small>MI</small></span><span class="d">milhões de libras em 2024, só em serviços contratados</span></div>
+      <div class="fig"><span class="lbl">Alemanha</span><span class="v">€282 <small>MI</small></span><span class="d">milhões de euros pagos pelas seguradoras públicas de saúde em ações dentro das empresas</span></div>
+      <div class="fig"><span class="lbl">Portugal</span><span class="v">77%</span><span class="d">de quem vai às termas procura bem-estar, e não tratamento de saúde</span></div>
+      <div class="fig"><span class="lbl">Emirados</span><span class="v"><small>US$</small> 245,8 <small>MI</small></span><span class="d">milhões de dólares, num setor de bem-estar que cresce 14,3% ao ano</span></div>
+    </div>
+    <p class="src" style="margin-top:14px">Espanha: imóveis ligados ao bem-estar crescem 46,1% ao ano. Itália: hotéis com programas ayurvédicos, como o Engel Ayurpura, nas Dolomitas. Fontes: Global Wellness Institute, IMARC, SHRM (associação americana de RH), BLS (estatística do trabalho dos EUA) e relatórios de cada setor.</p>
+  </section>
+
+  <!-- 05 Clientes -->
+  <section class="slide" data-ch="NO.O1 · A pesquisa" data-title="Para quem são">
+    <h2 class="title"><span class="it">quem compra e o que precisa resolver</span><span class="caps">Para quem são os produtos</span></h2>
+    <table>
+      <thead><tr><th style="width:26%" scope="col">Cliente</th><th style="width:44%" scope="col">O que precisa resolver</th><th scope="col">De onde sai o dinheiro</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" class="it rowh">Hotel de alto padrão</th><td>Aumentar o uso do spa e fazer spa, cozinha e quartos entregarem uma só experiência</td><td>Orçamento de operação do hotel ou do spa</td></tr>
+        <tr><th scope="row" class="it rowh">Residência ou clube de alto padrão</th><td>Transformar o bem-estar oferecido a moradores ou sócios num programa com rotina e responsável</td><td>Taxa do condomínio ou da empresa que administra o lugar</td></tr>
+        <tr><th scope="row" class="it rowh">Empresa</th><td>Apoiar líderes sob pressão e dar continuidade às ações de bem-estar. No Brasil, responder à NR-1. Nos EUA, controlar o custo com planos de saúde</td><td>Orçamento de eventos ou de treinamento, separado do de benefícios</td></tr>
+      </tbody>
+    </table>
+    <p class="note bottom">Os clientes com mais chance de comprar: espaços de alto padrão com equipe própria que querem estruturar o bem-estar, e empresas com orçamento para desenvolver líderes.</p>
+  </section>
+
+  <!-- 04 Quem contrata -->
+  <section class="slide tight" data-ch="NO.O1 · A pesquisa" data-title="Quem contrata">
+    <h2 class="title"><span class="it">as pessoas por trás de cada contrato</span><span class="caps">Quem contrata</span></h2>
+    <p class="note">Em cada um desses clientes, a decisão passa por cargos diferentes, cada um olhando para uma parte do problema. Os produtos são pensados para essas pessoas.</p>
+    <div class="cols three fill-y pt">
+      <div>
+        <p class="lbl col-h">Hotéis</p>
+        <ul class="rows compact roles">
+          <li><span class="t"><b>Gerente geral:</b> decide e responde pelo resultado do hotel</span></li>
+          <li><span class="t"><b>Diretor ou diretora de spa:</b> propõe o programa e acompanha o uso</span></li>
+          <li><span class="t"><b>Responsável pela cozinha:</b> leva o programa às refeições</span></li>
+          <li><span class="t"><b>Financeiro:</b> aprova o valor</span></li>
+        </ul>
+      </div>
+      <div>
+        <p class="lbl col-h">Residências e clubes</p>
+        <ul class="rows compact roles">
+          <li><span class="t"><b>Diretoria da administradora:</b> decide o programa de bem-estar do lugar</span></li>
+          <li><span class="t"><b>Gerente do clube ou da residência:</b> propõe e cuida da rotina</span></li>
+          <li><span class="t"><b>Incorporadora, no Brasil:</b> decide no lançamento</span></li>
+          <li><span class="t"><b>Síndico e conselho, no Brasil:</b> decidem depois da entrega</span></li>
+        </ul>
+      </div>
+      <div>
+        <p class="lbl col-h">Empresas</p>
+        <ul class="rows compact roles">
+          <li><span class="t"><b>Diretor ou diretora de RH:</b> escolhe o programa</span></li>
+          <li><span class="t"><b>Gerentes de benefícios e de desenvolvimento de líderes:</b> trazem o tema e cuidam do orçamento</span></li>
+          <li><span class="t"><b>Saúde e segurança, no Brasil:</b> entra pela NR-1, norma de riscos à saúde mental</span></li>
+          <li><span class="t"><b>Executivas que lideram grupos internos:</b> têm orçamento de eventos e acesso ao RH</span></li>
+          <li><span class="t"><b>Financeiro e diretoria:</b> aprovam o valor</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="src bottom">Na Gerdau, na Heineken, na Ambev e na Natura, a compra partiu do RH, da diretoria ou da área de saúde e segurança. No Brasil, 98% das empresas dizem que o financeiro pesa na decisão. Nos EUA, corretoras e agências de palestrantes intermediam parte das contratações.</p>
+  </section>
+
+  <!-- 06 Os três produtos -->
+  <section class="slide" data-ch="NO.O2 · Os produtos" data-title="Os três produtos">
+    <h2 class="title"><span class="it">o que oferecer a essas pessoas</span><span class="caps">Três produtos</span></h2>
+    <table>
+      <thead><tr><th style="width:22%" scope="col">Produto</th><th style="width:44%" scope="col">O que é</th><th scope="col">Quem contrata</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" class="it rowh">Protocolo Ojas</th><td>Um programa ayurvédico desenhado para um espaço, aplicado no dia a dia pela equipe do lugar depois de treinada por você</td><td>Hotéis, clubes, residências de alto padrão e empresas</td></tr>
+        <tr><th scope="row" class="it rowh">Imersão para líderes</th><td>De 2 a 4 dias com um grupo fechado de executivos, vendidos à empresa</td><td>RH, área de desenvolvimento de líderes, diretoria e hotéis</td></tr>
+        <tr><th scope="row" class="it rowh">Encontro Ojas</th><td>Uma palestra ou oficina sobre descanso, sono e rotina sob pressão, presencial ou online</td><td>RH, executivas que lideram grupos internos, hotéis e residências</td></tr>
+      </tbody>
+    </table>
+    <p class="note bottom">A ideia: o Encontro abre conversas, a Imersão é o formato com o maior preço público, e o Protocolo tem potencial de seguir gerando receita depois que você vai embora.</p>
+  </section>
+
+  <!-- 07 Protocolo A -->
+  <section class="slide tight" data-ch="NO.O2 · Os produtos" data-title="Protocolo Ojas">
+    <h2 class="title"><span class="it">produto NO.O1</span><span class="caps">Protocolo Ojas</span></h2>
+    <p class="note">Para hotéis, clubes e residências que querem oferecer um programa de bem-estar próprio: um programa ayurvédico que liga spa, cozinha, quartos e atividades e continua funcionando com a equipe do lugar.</p>
+    <div class="cols w-6-4 fill-y pt">
+      <div>
+        <div class="block"><p class="lbl col-h">Antes</p><p>Spa, cozinha, quartos e atividades que funcionam em separado, e um bem-estar que depende de cada área.</p></div>
+        <div class="block"><p class="lbl col-h">Depois</p><p>Um programa único que a equipe aplica todo dia, com manual, treinamento, material para hóspedes e moradores e um relatório de uso a cada acompanhamento.</p></div>
+      </div>
+      <div>
+        <p class="lbl col-h">O que o cliente ganha</p>
+        <ul class="rows compact">
+          <li><span class="t">Hóspedes e moradores dormindo e descansando melhor</span></li>
+          <li><span class="t">Funcionários com pausas e refeições que cuidam do dia</span></li>
+          <li><span class="t">Equipe segura do que fazer em cada função</span></li>
+          <li><span class="t">Mais motivos para usar o spa e voltar ao lugar</span></li>
+          <li><span class="t">Um cuidado que continua depois que você sai</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="facts">
+      <div><p class="lbl">Quem contrata</p><p>Gestor do hotel ou do spa, administradora da residência ou do clube, RH</p></div>
+      <div><p class="lbl">Seu tempo de trabalho</p><p>3 dias para desenhar, 5 a 10 para implantar e treinar, e cerca de 4 de acompanhamento ao longo de 12 meses</p></div>
+      <div><p class="lbl">Não inclui</p><p>Gestão diária da equipe, consultas individuais, obras, compra de produtos</p></div>
+    </div>
+  </section>
+
+  <!-- 08 Protocolo B -->
+  <section class="slide tight" data-ch="NO.O2 · Os produtos" data-title="Protocolo Ojas: frente às alternativas">
+    <h2 class="title"><span class="it">protocolo ojas</span><span class="caps">Frente às alternativas</span></h2>
+    <div class="cols w-6-4 fill-y">
+      <table class="dense">
+        <thead><tr><th style="width:38%" scope="col">O que existe hoje</th><th scope="col">Onde a Ojas tem espaço para ser diferente</th></tr></thead>
+        <tbody>
+          <tr><th scope="row" class="it rowh">Especialista de fora que atende por sessão, como no Spa Fasano</th><td>O serviço só acontece quando a especialista está lá. No Protocolo, a equipe aplica e você acompanha</td></tr>
+          <tr><th scope="row" class="it rowh">Manual de uma rede de spas, como o do Buddha Spa</th><td>Cobre só o spa. O Protocolo inclui cozinha, quartos e rotina</td></tr>
+          <tr><th scope="row" class="it rowh">Consultoria de spa</th><td>Cobra em etapas separadas o conceito, os procedimentos, o treinamento e o apoio. O Protocolo entrega tudo junto, com um método por trás</td></tr>
+          <tr><th scope="row" class="it rowh">Equipe ayurvédica própria, como no Six Senses</th><td>Serve a quem já tem a equipe. O Protocolo é para os lugares que não têm</td></tr>
+        </tbody>
+      </table>
+      <div class="block">
+        <p class="lbl col-h">Quanto o mercado cobra</p>
+        <ul class="rows compact">
+          <li><span class="t">Spa Fasano: R$ 558 a R$ 948 por sessão, pagos pelo hóspede</span></li>
+          <li><span class="t">Consultoria de spa: treinamento de equipe a partir de US$ 6.500</span></li>
+          <li><span class="t">Reino Unido: projeto de spa de £6.000 a £12.000</span></li>
+          <li><span class="t">EUA: contratos públicos para implantar programas de bem-estar, de US$ 20.000 a US$ 49.000</span></li>
+        </ul>
+        <p class="src" style="margin-top:12px">Preços de serviços parecidos, que não são preço da Ojas. Sessão avulsa é referência do mercado, não formato da Ojas. Nenhum hotel divulga quanto paga para alguém desenhar um programa.</p>
+      </div>
+    </div>
+    <p class="note bottom">Quem cresceu nesse setor criou um programa padrão, treinou quem aplica e guardou o especialista para o serviço mais caro. Foi assim com Fasano, Buddha Spa, Kontrast, Fountain Life e Canyon Ranch.</p>
+  </section>
+
+  <!-- 09 Imersão A -->
+  <section class="slide tight" data-ch="NO.O2 · Os produtos" data-title="Imersão para líderes">
+    <h2 class="title"><span class="it">produto NO.O2</span><span class="caps">Imersão para líderes</span></h2>
+    <p class="note">Para empresas que precisam cuidar de líderes sob pressão: um grupo fechado, de 2 a 4 dias, para reorganizar sono, rotina e descanso. Cada líder sai com um plano próprio, e o grupo com um plano para continuar depois.</p>
+    <div class="cols w-6-4 fill-y pt">
+      <div>
+        <div class="block"><p class="lbl col-h">Antes</p><p>Líderes sob pressão e ações de bem-estar isoladas. A parcela de funcionários satisfeitos com os programas caiu de 41% para 29% (Wellhub).</p></div>
+        <div class="block"><p class="lbl col-h">Depois</p><p>Um grupo que viveu o método junto, com um caderno e um plano de rotina para cada líder, um plano de continuidade para a turma e orientações para a empresa.</p></div>
+      </div>
+      <div>
+        <p class="lbl col-h">O que o cliente ganha</p>
+        <ul class="rows compact">
+          <li><span class="t">Líderes com rotina de sono e descanso realista</span></li>
+          <li><span class="t">Mais disposição em períodos de pressão</span></li>
+          <li><span class="t">Tempo longe da rotina para pensar com calma</span></li>
+          <li><span class="t">Um grupo que fala de carga sem constrangimento</span></li>
+          <li><span class="t">Líderes que levam esse cuidado às equipes</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="facts">
+      <div><p class="lbl">Quem contrata</p><p>RH, área de desenvolvimento de líderes, diretoria. Também hotéis que vendem a imersão aos hóspedes</p></div>
+      <div><p class="lbl">Seu tempo de trabalho</p><p>2 a 4 dias conduzindo, 3 a 5 de preparo na primeira vez e um dia antes no local</p></div>
+      <div><p class="lbl">Não inclui</p><p>Passagens e quartos dos participantes, venda de vagas, sessões individuais, mentoria depois</p></div>
+    </div>
+  </section>
+
+  <!-- 10 Imersão B -->
+  <section class="slide tight" data-ch="NO.O2 · Os produtos" data-title="Imersão: frente às alternativas">
+    <h2 class="title"><span class="it">imersão para líderes</span><span class="caps">Frente às alternativas</span></h2>
+    <div class="cols w-6-4 fill-y">
+      <table class="dense">
+        <thead><tr><th style="width:38%" scope="col">O que existe hoje</th><th scope="col">Onde a Ojas tem espaço para ser diferente</th></tr></thead>
+        <tbody>
+          <tr><th scope="row" class="it rowh">Resorts de bem-estar, como Miraval e Canyon Ranch</th><td>O produto é o lugar. Na Imersão, o produto é o método, que vai ao lugar escolhido pela empresa</td></tr>
+          <tr><th scope="row" class="it rowh">Coaching de liderança</th><td>Trabalha o jeito de liderar, em sessões individuais. A Imersão trabalha sono, rotina e descanso, em grupo</td></tr>
+          <tr><th scope="row" class="it rowh">Programas de alta performance, como os da Exos</th><td>Partem do treino físico. A Imersão parte do Ayurveda</td></tr>
+          <tr><th scope="row" class="it rowh">Plataformas de benefício, como o Wellhub</th><td>Dão acesso a serviços que cada pessoa usa sozinha. A Imersão é conduzida por você, com um grupo fechado</td></tr>
+        </tbody>
+      </table>
+      <div class="block">
+        <p class="lbl col-h">Quanto o mercado cobra</p>
+        <ul class="rows compact">
+          <li><span class="t">Brasil: R$ 35.000 a R$ 120.000 por grupo, em 2 a 3 dias</span></li>
+          <li><span class="t">EUA: US$ 750 a US$ 850 por pessoa por noite</span></li>
+          <li><span class="t">Miraval: US$ 3.700 por pessoa em 3 noites</span></li>
+          <li><span class="t">Reino Unido: £3.500 a £15.000 por grupo</span></li>
+          <li><span class="t">Emirados: a partir de 8.000 dirhams (cerca de US$ 2.200) por evento</span></li>
+        </ul>
+        <p class="src" style="margin-top:12px">Preços de pacotes completos, com hospedagem e organização. Não são preço da Ojas.</p>
+      </div>
+    </div>
+    <p class="note bottom">Nos EUA, a parcela de empresas que pagam coaching para seus líderes subiu de 47% para 55%, enquanto os programas gerais caíram. Não encontramos concorrente que use Ayurveda em programas para empresas.</p>
+  </section>
+
+  <!-- 11 Encontro A -->
+  <section class="slide tight" data-ch="NO.O2 · Os produtos" data-title="Encontro Ojas">
+    <h2 class="title"><span class="it">produto NO.O3</span><span class="caps">Encontro Ojas</span></h2>
+    <p class="note">Para RHs que precisam tratar pressão e saúde mental, e para hotéis e residências que querem um evento com conteúdo: de 90 minutos a 3 horas, para ensinar a descansar, não a relaxar.</p>
+    <div class="cols w-6-4 fill-y pt">
+      <div>
+        <div class="block"><p class="lbl col-h">Antes</p><p>Palestras e aulas avulsas que só 26% dos funcionários britânicos acham eficazes, e um bem-estar que 35% a 38% deles veem como só aparência.</p></div>
+        <div class="block"><p class="lbl col-h">Depois</p><p>Um encontro ligado à rotina e à carga de trabalho do grupo, com material escrito para depois, que abre a conversa para a Imersão e o Protocolo.</p></div>
+      </div>
+      <div>
+        <p class="lbl col-h">O que o cliente ganha</p>
+        <ul class="rows compact">
+          <li><span class="t">Práticas de sono e pausa para usar no mesmo dia</span></li>
+          <li><span class="t">Mais recursos para lidar com a pressão da rotina</span></li>
+          <li><span class="t">Uma conversa aberta sobre descanso e saúde mental</span></li>
+          <li><span class="t">Um momento ligado à realidade do grupo</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="facts">
+      <div><p class="lbl">Quem contrata</p><p>RH, muitas vezes por uma agência de palestrantes. Executivas que lideram grupos internos de mulheres. Hotéis e residências</p></div>
+      <div><p class="lbl">Seu tempo de trabalho</p><p>1 dia de entrega e 2 a 3 de preparo na primeira vez. Depois, cerca de meio dia de preparo a cada repetição</p></div>
+      <div><p class="lbl">Não inclui</p><p>Atendimento individual depois da palestra, gravação para venda, aula avulsa de yoga ou meditação</p></div>
+    </div>
+  </section>
+
+  <!-- 12 Encontro B -->
+  <section class="slide tight" data-ch="NO.O2 · Os produtos" data-title="Encontro: frente às alternativas">
+    <h2 class="title"><span class="it">encontro ojas</span><span class="caps">Frente às alternativas</span></h2>
+    <div class="cols w-6-4 fill-y">
+      <table class="dense">
+        <thead><tr><th style="width:38%" scope="col">O que existe hoje</th><th scope="col">Onde a Ojas tem espaço para ser diferente</th></tr></thead>
+        <tbody>
+          <tr><th scope="row" class="it rowh">Palestras de saúde mental e de motivação</th><td>Falam do tema. O Encontro ensina práticas de sono, pausa e descanso que cada pessoa leva para a rotina</td></tr>
+          <tr><th scope="row" class="it rowh">Aula avulsa de yoga ou meditação</th><td>Ticket baixo. Só faz sentido em Miami, sem deslocamento. Para o Brasil ou outro país, não vale vender</td></tr>
+          <tr><th scope="row" class="it rowh">Atendimento de saúde mental, como Lyra, Conexa e Vittude</th><td>Atendimento individual, por profissionais de saúde. O Encontro é educativo e em grupo, e soma a esse trabalho</td></tr>
+        </tbody>
+      </table>
+      <div class="block">
+        <p class="lbl col-h">Quanto o mercado paga por palestra</p>
+        <ul class="rows compact">
+          <li><span class="t">Brasil: R$ 5.000 a R$ 15.000, palestrante em ascensão no tema saúde mental</span></li>
+          <li><span class="t">EUA: US$ 5.000 a US$ 10.000 para nome novo. Online, a partir de US$ 599</span></li>
+          <li><span class="t">Reino Unido: £500 a £2.000 para nome novo</span></li>
+          <li><span class="t">Alemanha: €800 a €1.900 por dia da saúde, um evento interno da empresa</span></li>
+          <li><span class="t">Espanha: €2.000 a €10.000</span></li>
+          <li><span class="t">Emirados: 800 a 3.000 dirhams (US$ 220 a US$ 820)</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="note bottom">É o formato que as empresas mais compram: 56,6% das empresas brasileiras contratam palestras. Nas faixas mais baixas, a viagem consome o valor do contrato.</p>
+  </section>
+
+  <!-- 18 Como se combinam -->
+  <section class="slide" data-ch="NO.O2 · Os produtos" data-title="Como os produtos se combinam">
+    <h2 class="title"><span class="it">cada produto leva aos outros</span><span class="caps">Como se combinam</span></h2>
+    <div class="cols fill-y">
+      <div>
+        <p class="lbl col-h">Com hotéis, clubes e residências</p>
+        <ol class="rows two">
+          <li><span class="n">1</span><span class="t"><b>Encontro</b>, feito como evento para hóspedes ou moradores, apresenta o método ao lugar</span></li>
+          <li><span class="n">2</span><span class="t"><b>Protocolo</b> transforma esse interesse num programa que fica no lugar</span></li>
+          <li><span class="n">3</span><span class="t"><b>Imersão</b> leva um grupo pagante ao lugar que já tem o protocolo: o hotel ganha ocupação, e a Ojas, um caso para mostrar</span></li>
+        </ol>
+      </div>
+      <div>
+        <p class="lbl col-h">Com empresas</p>
+        <ol class="rows two">
+          <li><span class="n">1</span><span class="t"><b>Encontro</b> sobre liderança ou sobre a vida dos 40 aos 60 anos abre a conversa com o RH</span></li>
+          <li><span class="n">2</span><span class="t"><b>Imersão</b> trabalha os líderes da mesma empresa, de preferência num lugar que já tem o protocolo</span></li>
+          <li><span class="n">3</span><span class="t"><b>Protocolo</b> no refeitório e nas áreas de descanso dá continuidade ao que a empresa começou</span></li>
+        </ol>
+      </div>
+    </div>
+    <p class="note bottom">A lógica: o Encontro traz contatos, o Protocolo cria lugares para a Imersão, e a Imersão gera casos e depoimentos que ajudam a vender o Protocolo.</p>
+  </section>
+
+  <!-- 13 Comparação: como -->
+  <section class="slide tight" data-ch="NO.O3 · A comparação" data-title="Como comparamos os produtos">
+    <h2 class="title"><span class="it">nove produtos possíveis, seis países</span><span class="caps">Como comparamos</span></h2>
+    <p class="note">Por que esses três? Comparamos nove opções em seis países com dois números: uma nota e o potencial de ganho por dia de trabalho. Tudo aqui é estimativa baseada em mercado.</p>
+    <div class="cols fill-y" style="padding-top:14px">
+      <div class="block">
+        <p class="lbl col-h">1 · A nota, de 0 a 5</p>
+        <p>Quanto maior a nota, mais chance de o produto dar certo naquele país. Ela junta 17 perguntas, em cinco grupos:</p>
+        <ul class="rows compact">
+          <li><span class="t"><b>30%</b> Cabe na sua rotina? Quantos dias exige e quanto rende sem você no local</span></li>
+          <li><span class="t"><b>25%</b> Alguém já compra? Compras reais encontradas e concorrência</span></li>
+          <li><span class="t"><b>20%</b> É fácil de vender e de entregar, dentro das leis do país?</span></li>
+          <li><span class="t"><b>15%</b> Quanto o mercado paga por algo parecido?</span></li>
+          <li><span class="t"><b>10%</b> Ajuda a vender os outros produtos?</span></li>
+        </ul>
+      </div>
+      <div class="block">
+        <p class="lbl col-h">2 · O potencial de ganho por dia de trabalho</p>
+        <p>Uma estimativa do que tende a ficar com você, por dia de trabalho, depois de pagar comissão da agência, passagem, hotel, impostos e seguro. Os dias contam o preparo, a entrega e a viagem a partir dos EUA.</p>
+        <p>Como a Ojas ainda não tem preço, a conta usa o valor do meio da faixa que o mercado cobra por serviços parecidos. Não é uma afirmação de quanto você vai cobrar.</p>
+        <p class="src" style="margin-top:14px">As nove opções: os três produtos recomendados, quatro versões menores deles e dois programas longos, um de meses para lideranças e outro só para mulheres. Alemanha e Espanha ficaram fora da comparação e entram na leitura por país.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14 Comparação: nota -->
+  <section class="slide tight" data-ch="NO.O3 · A comparação" data-title="A nota de cada produto">
+    <h2 class="title"><span class="it">nota de 0 a 5 · quanto maior, mais chance de dar certo no país</span><span class="caps">A nota de cada produto</span></h2>
+    <table class="dense">
+      <caption class="src" style="caption-side:bottom;text-align:left;padding-top:10px">Protocolo nos Emirados: com duas visitas de acompanhamento ao longo do ano, o contrato exigiria mais de 30 dias de trabalho seus, o máximo que usamos para um único cliente. Por isso ficou fora da comparação nesse país.</caption>
+      <thead><tr><th style="width:22%" scope="col">Produto</th><th scope="col">Brasil</th><th scope="col">EUA</th><th scope="col">Portugal</th><th scope="col">Itália</th><th scope="col">Reino Unido</th><th scope="col" style="width:16%">Emirados</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" class="it rowh">Protocolo Ojas</th><td class="val">3,08</td><td class="val">3,68</td><td class="val">3,04</td><td class="val">3,15</td><td class="val">3,02</td><td>Exige dias demais</td></tr>
+        <tr><th scope="row" class="it rowh">Encontro Ojas</th><td class="val">3,49</td><td class="val">3,47</td><td class="val">2,86</td><td class="val">2,98</td><td class="val">3,26</td><td class="val">2,94</td></tr>
+        <tr><th scope="row" class="it rowh">Imersão para líderes</th><td class="val">3,39</td><td class="val">3,47</td><td class="val">2,44</td><td class="val">2,68</td><td class="val">3,50</td><td class="val">3,21</td></tr>
+      </tbody>
+    </table>
+    <ul class="rows compact" style="margin-top:18px">
+      <li><span class="t">A maior nota da tabela é a do Protocolo nos EUA (3,68). Hotéis de Miami já pagam empresas de fora para conduzir programas de bem-estar.</span></li>
+      <li><span class="t">A nota do Encontro é a mais confiável: no Brasil e nos EUA, quase toda ela vem de compras reais que encontramos, e não de estimativa.</span></li>
+      <li><span class="t">A Imersão tem nota baixa em Portugal e na Itália porque não achamos empresas desses países comprando imersões.</span></li>
+      <li><span class="t">Os dois programas longos, para lideranças e só para mulheres, ficaram abaixo de 2,5. Por isso liderança e mulheres de 40 a 60 anos entram como versões dos três produtos.</span></li>
+    </ul>
+  </section>
+
+  <!-- 15 Comparação: a conta -->
+  <section class="slide tight" data-ch="NO.O3 · A comparação" data-title="Como estimamos o potencial de ganho">
+    <h2 class="title"><span class="it">exemplo com um contrato nos EUA, em dólares</span><span class="caps">Como estimamos o potencial de ganho</span></h2>
+    <table class="dense">
+      <thead><tr><th style="width:32%" scope="col">Passo</th><th scope="col">Encontro presencial</th><th scope="col">Imersão para líderes</th><th scope="col">Protocolo com 2 visitas</th><th scope="col">Protocolo por videochamada</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" class="rowh">Preço estimado para o cliente</th><td class="val">10.500</td><td class="val">31.500</td><td class="val">34.500</td><td class="val">34.500</td></tr>
+        <tr><th scope="row" class="rowh">Menos a comissão da agência que vendeu</th><td class="val">2.625</td><td class="val">4.725</td><td class="val">0</td><td class="val">0</td></tr>
+        <tr><th scope="row" class="rowh">Menos passagem, hotel e material</th><td class="val">622</td><td class="val">700</td><td class="val">500</td><td class="val">500</td></tr>
+        <tr><th scope="row" class="rowh">Menos impostos e seguro</th><td class="val">2.198</td><td class="val">7.896</td><td class="val">10.356</td><td class="val">10.313</td></tr>
+        <tr><th scope="row" class="rowh"><b>Potencial de ganho no contrato</b></th><td class="val"><b>5.055</b></td><td class="val"><b>18.179</b></td><td class="val"><b>23.644</b></td><td class="val"><b>23.687</b></td></tr>
+        <tr><th scope="row" class="rowh">Dias de trabalho, com preparo e viagem</th><td class="val">2,5</td><td class="val">8,5</td><td class="val">18</td><td class="val">13</td></tr>
+        <tr><th scope="row" class="rowh"><b>Potencial de ganho por dia de trabalho</b></th><td class="val"><b>2.022</b></td><td class="val"><b>2.139</b></td><td class="val"><b>1.314</b></td><td class="val"><b>1.822</b></td></tr>
+      </tbody>
+    </table>
+    <p class="src" style="margin-top:12px">O preço estimado é o meio da faixa que o mercado cobra por serviços parecidos, e não preço da Ojas. Comissão de agência: 25% no Encontro e 15% na Imersão. Imposto de 30% sobre o lucro de uma empresa americana. Protocolo com 2 visitas: quatro acompanhamentos no ano, dois deles no local. Protocolo por videochamada: uma chamada 30 dias depois da implantação e renovação no ano seguinte.</p>
+  </section>
+
+  <!-- 16 Comparação: por país -->
+  <section class="slide tight" data-ch="NO.O3 · A comparação" data-title="Potencial de ganho em cada país">
+    <h2 class="title"><span class="it">estimativa por dia de trabalho, em dólares</span><span class="caps">Potencial de ganho por país</span></h2>
+    <table class="dense">
+      <caption class="src" style="caption-side:bottom;text-align:left;padding-top:10px">O potencial de ganho é uma estimativa do que tende a ficar com você depois de pagar comissão da agência, passagem, hotel, impostos e seguro, dividido pelos dias de trabalho, contando preparo e a viagem a partir dos EUA. O preço estimado é o meio da faixa de mercado de cada país, e não preço da Ojas. Valor negativo: o contrato tende a custar mais do que paga. No Brasil, a empresa que contrata retém 25% de imposto sobre palestra e imersão e 15% sobre o protocolo. Encontro online: só há preço de mercado no Brasil e nos EUA.</caption>
+      <thead><tr><th style="width:27%" scope="col">Produto</th><th scope="col">Brasil</th><th scope="col">EUA</th><th scope="col">Portugal</th><th scope="col">Itália</th><th scope="col">Reino Unido</th><th scope="col" style="width:14%">Emirados</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" class="it rowh">Protocolo com 2 visitas no ano</th><td class="val">737</td><td class="val">1.314</td><td class="val">764</td><td class="val">1.300</td><td class="val">737</td><td>Exige dias demais</td></tr>
+        <tr><th scope="row" class="it rowh">Protocolo por videochamada</th><td class="val">1.232</td><td class="val">1.822</td><td class="val">1.244</td><td class="val">1.804</td><td class="val">1.214</td><td class="val">960</td></tr>
+        <tr><th scope="row" class="it rowh">Imersão para líderes</th><td class="val">147</td><td class="val">2.139</td><td class="val">1.132</td><td class="val">1.537</td><td class="val">179</td><td class="val" aria-label="negativo, 85">−85</td></tr>
+        <tr><th scope="row" class="it rowh">Encontro presencial</th><td class="val" aria-label="negativo, 53">−53</td><td class="val">2.022</td><td class="val">863</td><td class="val">2.318</td><td class="val">95</td><td class="val" aria-label="negativo, 192">−192</td></tr>
+        <tr><th scope="row" class="it rowh">Encontro online</th><td class="val">593</td><td class="val">1.741</td><td>Sem preço</td><td>Sem preço</td><td>Sem preço</td><td>Sem preço</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 17 Comparação: leitura -->
+  <section class="slide tight" data-ch="NO.O3 · A comparação" data-title="O que os números mostram">
+    <h2 class="title"><span class="it">o papel de cada produto</span><span class="caps">O que os números mostram</span></h2>
+    <ol class="rows snug">
+      <li><span class="n">NO.O1</span><span class="t"><b>O Protocolo é o único dos três com potencial de lucro em todos os países,</b> mesmo pagando a viagem. No Brasil, o potencial vai de US$ 737 a US$ 1.232 por dia de trabalho</span><span></span></li>
+      <li><span class="n">NO.O2</span><span class="t"><b>Nos EUA e na Itália, Imersão e Encontro têm potencial por dia maior que o do Protocolo.</b> Para igualar os US$ 2.022 por dia do Encontro nos EUA, o Protocolo com 2 visitas teria de custar US$ 52.722, acima do maior preço que encontramos (US$ 49.000)</span><span></span></li>
+      <li><span class="n">NO.O3</span><span class="t"><b>O Protocolo por videochamada tem potencial de 39% a 83% maior por dia</b> do que com 2 visitas, conforme o país. Nos EUA, iguala o Encontro a US$ 38.216, dentro da faixa de mercado. Funciona se a equipe mantiver a prática sem você</span><span></span></li>
+      <li><span class="n">NO.O4</span><span class="t"><b>No Brasil, no Reino Unido e nos Emirados, a viagem come quase todo o valor</b> de um Encontro presencial ou de uma Imersão vendidos sozinhos: o potencial vai de US$ 192 de prejuízo a US$ 179 de ganho por dia. No Brasil, o Encontro online tem potencial de ganho de US$ 593 por dia</span><span></span></li>
+    </ol>
+    <p class="note bottom">São estimativas baseadas em preços de mercado, feitas para comparar os produtos entre si. O valor real de cada um aparece no primeiro contrato fechado.</p>
+  </section>
+
+  <!-- Mulheres de 40 a 60 -->
+  <section class="slide tight" data-ch="NO.O4 · Mulheres de 40 a 60" data-title="Mulheres de 40 a 60 anos">
+    <h2 class="title"><span class="it">uma frente própria, com uma versão de cada produto</span><span class="caps">Mulheres de 40 a 60 anos</span></h2>
+    <div class="figs grid6 sm wide">
+      <div class="fig"><span class="lbl">Brasil</span><span class="v">63%</span><span class="d">dos 546 mil afastamentos por saúde mental em 2025 foram de mulheres</span></div>
+      <div class="fig"><span class="lbl">Brasil</span><span class="v">37 <small>MI</small></span><span class="d">de brasileiras têm de 40 a 65 anos, e de 20% a 30% têm sintomas fortes na menopausa</span></div>
+      <div class="fig"><span class="lbl">EUA</span><span class="v">62%</span><span class="d">das mulheres da geração X valorizam o apoio da empresa na menopausa</span></div>
+      <div class="fig"><span class="lbl">EUA</span><span class="v">4% a 13%</span><span class="d">das empresas contratam um fornecedor nesse tema, conforme o porte</span></div>
+      <div class="fig"><span class="lbl">Reino Unido</span><span class="v">67%</span><span class="d">das trabalhadoras de 40 a 60 anos com sintomas dizem que eles atrapalham o trabalho</span></div>
+      <div class="fig"><span class="lbl">Alemanha</span><span class="v">431 x 266</span><span class="d">dias de afastamento por saúde mental a cada 100 seguradas, contra os homens</span></div>
+    </div>
+    <p class="src" style="margin-top:12px">Fontes: Ministério da Previdência Social, Governo Federal, Mercer, KFF, CIPD e DAK.</p>
+    <p class="note bottom">Na comparação, um programa longo só para mulheres ficou abaixo de 2,5, e a necessidade segue grande. Por isso recomendamos uma versão de cada produto, vendida a quem já contrata.</p>
+  </section>
+
+  <section class="slide tight" data-ch="NO.O4 · Mulheres de 40 a 60" data-title="Protocolo Vitalidade">
+    <h2 class="title"><span class="it">versão para mulheres de 40 a 60 anos</span><span class="caps">Protocolo Vitalidade</span></h2>
+    <p class="note">O Protocolo Ojas para mulheres na transição dos 40 aos 60 anos: sono, energia e ritmo do dia organizados pelo Ayurveda e aplicados pela equipe do lugar.</p>
+    <div class="cols w-6-4 fill-y pt">
+      <div>
+        <div class="block"><p class="lbl col-h">O que muda no produto</p><p>O ritual da noite e o quarto ganham foco em sono: luz, temperatura e recolhimento. Cozinha e pausas olham para a energia ao longo do dia.</p></div>
+        <div class="block"><p class="lbl col-h">Onde se aplica</p><p>Residências e clubes, para moradoras e sócias. Hotéis, numa estadia voltada a esse público. Empresas, em pausas e áreas de descanso.</p></div>
+      </div>
+      <div>
+        <p class="lbl col-h">O que o cliente ganha</p>
+        <ul class="rows compact">
+          <li><span class="t">Uma rotina de sono e descanso para essa fase</span></li>
+          <li><span class="t">Mais disposição, com refeições e pausas organizadas</span></li>
+          <li><span class="t">Um espaço que trata o tema com naturalidade</span></li>
+          <li><span class="t">Uma oferta nova para um público com renda</span></li>
+          <li><span class="t">Um cuidado que segue com a equipe do lugar</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="facts">
+      <div><p class="lbl">Quem contrata</p><p>Gerente geral, diretoria de spa, administradora, diretoria de RH</p></div>
+      <div><p class="lbl">Seu tempo de trabalho</p><p>O mesmo do Protocolo. Menos dias como módulo de um Protocolo já implantado</p></div>
+      <div><p class="lbl">Referência de preço</p><p>A do Protocolo. Não achamos preço público para esse recorte</p></div>
+    </div>
+  </section>
+
+  <section class="slide tight" data-ch="NO.O4 · Mulheres de 40 a 60" data-title="Imersão para mulheres que lideram">
+    <h2 class="title"><span class="it">versão para mulheres de 40 a 60 anos</span><span class="caps">Imersão para mulheres que lideram</span></h2>
+    <p class="note">A Imersão para líderes com um grupo fechado de executivas: de 2 a 4 dias para reorganizar sono, rotina e descanso nessa fase da vida.</p>
+    <div class="cols w-6-4 fill-y pt">
+      <div>
+        <div class="block"><p class="lbl col-h">O que muda no produto</p><p>Os mesmos dias e o mesmo método, com conteúdo sobre energia, sono e ritmo nessa fase, e conversa entre mulheres que vivem a mesma pressão.</p></div>
+        <div class="block"><p class="lbl col-h">Onde se aplica</p><p>Empresas com grupos internos de mulheres ou programas para executivas. Hotéis que vendem a imersão e cuidam da venda de vagas.</p></div>
+      </div>
+      <div>
+        <p class="lbl col-h">O que o cliente ganha</p>
+        <ul class="rows compact">
+          <li><span class="t">Executivas com rotina de sono e descanso realista</span></li>
+          <li><span class="t">Mais disposição para liderar nessa fase</span></li>
+          <li><span class="t">Um grupo de pares para falar do tema</span></li>
+          <li><span class="t">Uma ação concreta para manter mulheres na liderança</span></li>
+          <li><span class="t">Um plano para continuar depois</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="facts">
+      <div><p class="lbl">Quem contrata</p><p>Diretoria de RH, executiva do grupo interno de mulheres, desenvolvimento de líderes, hotéis</p></div>
+      <div><p class="lbl">Seu tempo de trabalho</p><p>O mesmo da Imersão: 2 a 4 dias conduzindo, 3 a 5 de preparo e um dia antes no local</p></div>
+      <div><p class="lbl">Referência de preço</p><p>A da Imersão. Não achamos preço público para turmas só de mulheres</p></div>
+    </div>
+  </section>
+
+  <section class="slide tight" data-ch="NO.O4 · Mulheres de 40 a 60" data-title="Encontro Vitalidade">
+    <h2 class="title"><span class="it">versão para mulheres de 40 a 60 anos</span><span class="caps">Encontro Vitalidade</span></h2>
+    <p class="note">O Encontro Ojas sobre vitalidade dos 40 aos 60 anos: de 90 minutos a 3 horas, presencial ou online, com o Ayurveda explicando o porquê.</p>
+    <div class="cols w-6-4 fill-y pt">
+      <div>
+        <div class="block"><p class="lbl col-h">O que muda no produto</p><p>O tema passa a ser a fase da vida, com exemplos de quem trabalha, cuida da família e lidera. Dúvidas individuais de saúde vão para um profissional.</p></div>
+        <div class="block"><p class="lbl col-h">Onde se aplica</p><p>Empresas, em eventos de grupos internos. Hotéis e residências, como evento para hóspedes e moradoras. Você já fez uma palestra só para mulheres no C6.</p></div>
+      </div>
+      <div>
+        <p class="lbl col-h">O que o cliente ganha</p>
+        <ul class="rows compact">
+          <li><span class="t">Práticas de sono e pausa para usar no mesmo dia</span></li>
+          <li><span class="t">Mais informação e menos constrangimento sobre o tema</span></li>
+          <li><span class="t">Uma conversa que costuma faltar nas empresas</span></li>
+          <li><span class="t">Uma primeira ação concreta para esse público</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="facts">
+      <div><p class="lbl">Quem contrata</p><p>Executiva do grupo interno de mulheres, diretoria de RH ou de diversidade, hotéis e residências</p></div>
+      <div><p class="lbl">Seu tempo de trabalho</p><p>O mesmo do Encontro: 1 dia de entrega e 2 a 3 de preparo na primeira vez</p></div>
+      <div><p class="lbl">Referência de preço</p><p>A do Encontro. Ao consumidor, oficina de R$ 697 por pessoa em São Paulo</p></div>
+    </div>
+  </section>
+
+  <section class="slide" data-ch="NO.O4 · Mulheres de 40 a 60" data-title="Como posicionar essa frente">
+    <h2 class="title"><span class="it">mulheres de 40 a 60 anos</span><span class="caps">Como posicionar essa frente</span></h2>
+    <div class="cols three fill-y">
+      <div>
+        <p class="lbl col-h">Por que combina com a Ojas</p>
+        <ul class="rows compact">
+          <li><span class="t">Você vive essa fase e fala do tema com autoridade pessoal</span></li>
+          <li><span class="t">O Ayurveda olha para a menopausa como uma fase da vida</span></li>
+          <li><span class="t">A oferta existe para o consumidor, e é menor nas empresas</span></li>
+          <li><span class="t">Há compras puxadas por executivas: na Genentech, a diretora de pessoas levou a própria experiência à discussão interna</span></li>
+        </ul>
+      </div>
+      <div>
+        <p class="lbl col-h">Falar</p>
+        <ul class="rows compact">
+          <li><span class="t">Vitalidade, energia, sono e ritmo</span></li>
+          <li><span class="t">Fase da vida e transição</span></li>
+          <li><span class="t">Mulheres na liderança e permanência das executivas na empresa</span></li>
+          <li><span class="t">Na Europa, midlife. Com hotéis e residências, longevidade</span></li>
+        </ul>
+      </div>
+      <div>
+        <p class="lbl col-h">Não falar</p>
+        <ul class="rows compact">
+          <li><span class="t">Alívio de sintomas ou tratamento da menopausa</span></li>
+          <li><span class="t">Antienvelhecimento e promessas estéticas</span></li>
+          <li><span class="t">“Marca para mulheres”. A Ojas é maior que essa frente</span></li>
+          <li><span class="t">Respostas para cada caso. Em grupo, o conteúdo é coletivo</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="note bottom">As versões usam a mesma estimativa dos produtos base. Sem preço público para esse recorte, o primeiro contrato define a referência.</p>
+  </section>
+
+  <!-- Diferencial A -->
+  <section class="slide" data-ch="NO.O5 · O posicionamento" data-title="O que diferencia a Ojas">
+    <h2 class="title"><span class="it">o espaço que a sua história sustenta</span><span class="caps">O que diferencia a Ojas</span></h2>
+    <p class="note">A oportunidade é ocupar um lugar que o mercado ainda não junta: Ayurveda com 25 anos de prática, traduzido para a rotina de hotéis e empresas, que continua depois que você sai.</p>
+    <div class="cols three fill-y pt">
+      <div class="block pillar">
+        <p class="lbl col-h">1 · Origem</p>
+        <p class="word">Profundidade</p>
+        <p>Você pratica Ayurveda desde 2001, antes de o tema ter mercado. Grande parte da concorrência revende o serviço de outras pessoas ou trata o Ayurveda como um item do cardápio do spa.</p>
+      </div>
+      <div class="block pillar">
+        <p class="lbl col-h">2 · Linguagem</p>
+        <p class="word">Tradução</p>
+        <p>Você começou em agência de publicidade, já falou em empresas como o C6 e fala quatro línguas. Isso leva o Ayurveda para a pauta de quem contrata: rotina, sono, descanso e líderes sob pressão.</p>
+      </div>
+      <div class="block pillar">
+        <p class="lbl col-h">3 · Entrega</p>
+        <p class="word">Permanência</p>
+        <p>O método é pensado para ficar: a equipe aplica, o líder sai com um plano e o cliente segue sem a sua presença diária. O especialista de fora só entrega enquanto está no local.</p>
+      </div>
+    </div>
+    <p class="note bottom">Cada parte existe em algum concorrente. Não encontramos quem junte as três em programas para empresas e espaços de alto padrão.</p>
+  </section>
+
+  <!-- Diferencial B -->
+  <section class="slide tight" data-ch="NO.O5 · O posicionamento" data-title="De onde vem a diferença">
+    <h2 class="title"><span class="it">o que já existe e o que isso sustenta</span><span class="caps">De onde vem a diferença</span></h2>
+    <table class="dense">
+      <thead><tr><th style="width:18%" scope="col">Seu histórico</th><th style="width:30%" scope="col">O que você já tem</th><th style="width:26%" scope="col">O que isso sustenta</th><th scope="col">O que o mercado oferece hoje</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" class="it rowh">Ayurveda desde 2001</th><td>25 anos de prática, nutrição integrativa, yoga e formação em florais no Reino Unido</td><td>Um método próprio, que organiza o dia inteiro</td><td>Ayurveda restrito ao spa ou a hotéis com equipe própria, como o Six Senses</td></tr>
+        <tr><th scope="row" class="it rowh">Empresas</th><td>Início na publicidade, palestras no C6 e na Contraste, cerca de dois anos com clientes corporativos</td><td>Uma conversa com RH e diretoria na língua deles</td><td>Em programas para empresas, não encontramos concorrente com Ayurveda</td></tr>
+        <tr><th scope="row" class="it rowh">Retiros</th><td>Vários anos conduzindo retiros para empresas e para pessoas</td><td>Uma Imersão que o líder sente, e não uma aula</td><td>Resorts em que o produto é o lugar, e coaching em sessões individuais</td></tr>
+        <tr><th scope="row" class="it rowh">Protocolo</th><td>A Contraste pediu o seu protocolo ao fim de uma reunião</td><td>Sinal de procura pelo formato antes de ele virar produto</td><td>Manuais que cobrem só o spa e consultorias que cobram por etapa</td></tr>
+        <tr><th scope="row" class="it rowh">Marca e escrita</th><td>Três marcas registradas nos EUA, coluna em revista, Substack e quatro línguas</td><td>Um método com nome, dono e ponto de vista, em mais de um país</td><td>Agências e plataformas que revendem o serviço de outras pessoas</td></tr>
+      </tbody>
+    </table>
+    <p class="note bottom">Hoje isso é trajetória. Vira diferencial reconhecido quando o método estiver escrito e o primeiro Protocolo e a primeira Imersão tiverem resultado para mostrar.</p>
+  </section>
+
+  <!-- 20 Temas -->
+  <section class="slide" data-ch="NO.O5 · O posicionamento" data-title="Temas que valem em todos os países">
+    <h2 class="title"><span class="it">os assuntos que abrem a conversa</span><span class="caps">Temas que valem em todo lugar</span></h2>
+    <table class="dense">
+      <thead><tr><th style="width:24%" scope="col">Tema</th><th style="width:30%" scope="col">Onde a pesquisa encontrou</th><th scope="col">Como usar</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" class="it rowh">Liderança sob pressão</th><td>Brasil, EUA, Reino Unido, Emirados</td><td>Tema central da Imersão e do Encontro</td></tr>
+        <tr><th scope="row" class="it rowh">Sono</th><td>Em todos, com mais força nos hotéis da Europa e dos Emirados</td><td>Uma das bases do Protocolo, e o tema que mais abre a conversa com homens</td></tr>
+        <tr><th scope="row" class="it rowh">Descanso</th><td>Brasil e EUA</td><td>Tema do Encontro: ensinar a descansar, não a relaxar</td></tr>
+        <tr><th scope="row" class="it rowh">Longevidade</th><td>Europa, Emirados e hotéis em geral</td><td>Conversa com hotéis e residências. Fica fora da conversa com o RH americano, que não usa o termo</td></tr>
+        <tr><th scope="row" class="it rowh">Mulheres de 40 a 60 anos</th><td>Brasil, EUA, Reino Unido, Alemanha</td><td>Frente própria, com uma versão de cada um dos três produtos</td></tr>
+        <tr><th scope="row" class="it rowh">Continuidade</th><td>Em todos os países</td><td>Mostra que o cuidado segue depois do primeiro contato</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Falar e não falar -->
+  <section class="slide tight" data-ch="NO.O5 · O posicionamento" data-title="O que falar e o que não falar">
+    <h2 class="title"><span class="it">o lugar que a Ojas quer ocupar</span><span class="caps">O que falar e o que não</span></h2>
+    <div class="cols fill-y">
+      <div>
+        <p class="lbl col-h">Falar</p>
+        <ul class="rows compact">
+          <li><span class="t">Ayurveda como método de recuperação para quem vive sob pressão</span></li>
+          <li><span class="t">Rituais, rotina e continuidade: um cuidado que entra no dia e fica</span></li>
+          <li><span class="t">“Ensinar a descansar, não a relaxar”, como ideia que o cliente lembra</span></li>
+          <li><span class="t">Um método e três formas de contratar, nessa ordem</span></li>
+          <li><span class="t">Com RH e diretoria: líderes, carga de trabalho e resultado que se acompanha</span></li>
+          <li><span class="t">Com hotéis e residências: rituais, longevidade, spa, cozinha e quartos funcionando juntos</span></li>
+          <li><span class="t">Europa e Emirados: Ayurveda no nome. Brasil e EUA: o problema do cliente primeiro, com o Ayurveda explicando o método</span></li>
+        </ul>
+      </div>
+      <div>
+        <p class="lbl col-h">Não falar</p>
+        <ul class="rows compact">
+          <li><span class="t">“Bem-estar” e “holístico” soltos, que colocam a Ojas junto de todo o mercado</span></li>
+          <li><span class="t">Relaxamento e pausa zen como promessa. O valor está na recuperação</span></li>
+          <li><span class="t">Lista de serviços: yoga, florais, nutrição e meditação como vitrines separadas</span></li>
+          <li><span class="t">“Mais um benefício” ou “palestra motivacional”</span></li>
+          <li><span class="t">Linguagem espiritual ou mística na conversa comercial</span></li>
+          <li><span class="t">Sânscrito nos títulos. O Ayurveda é explicado dentro da sala</span></li>
+          <li><span class="t">Cura e resultado garantido. A Ojas educa e organiza rotinas</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- O que mostrar -->
+  <section class="slide tight" data-ch="NO.O5 · O posicionamento" data-title="O que mostrar a quem contrata">
+    <h2 class="title"><span class="it">como criar interesse e valor antes da proposta</span><span class="caps">O que mostrar</span></h2>
+    <ol class="rows snug">
+      <li><span class="n">NO.O1</span><span class="t"><b>Um ponto de vista.</b> Uma tese que o cliente lembra e repete, como “ensinar a descansar, não a relaxar”, presente em cada fala, na coluna e no Substack</span><span></span></li>
+      <li><span class="n">NO.O2</span><span class="t"><b>O método com nome.</b> As quatro bases da Ojas numa página: sono e recolhimento, ritmo do dia e pausas, alimentação sem dieta clínica, ambiente pensado para os sentidos. O cliente entende o método, e o formato vem depois</span><span></span></li>
+      <li><span class="n">NO.O3</span><span class="t"><b>A experiência de quem decide.</b> O seu trabalho convence quando é vivido. Um Encontro pago ou um ritual conduzido para diretoria e gerência gera mais interesse do que uma apresentação</span><span></span></li>
+      <li><span class="n">NO.O4</span><span class="t"><b>O que fica guardado.</b> Uma amostra do manual, de 10 a 15 páginas, mostra a profundidade e deixa claro que o restante tem preço</span><span></span></li>
+      <li><span class="n">NO.O5</span><span class="t"><b>Os primeiros casos.</b> Cada Protocolo e cada Imersão deixam participação, prática mantida pela equipe, satisfação e depoimentos. É o ativo que mais ganha valor com o tempo</span><span></span></li>
+    </ol>
+    <p class="note bottom">A ordem importa: primeiro a ideia, depois o método, a experiência, a amostra e os casos. O preço chega quando o cliente já entende o valor.</p>
+  </section>
+
+  <!-- 23 Mercados A -->
+  <section class="slide tight" data-ch="NO.O6 · Países" data-title="Países: Brasil, EUA, Reino Unido, Alemanha">
+    <h2 class="title"><span class="it">o que muda de um país para outro</span><span class="caps">Por país</span></h2>
+    <table class="dense" style="font-size:15.5px">
+      <thead><tr><th style="width:13%" scope="col">País</th><th style="width:45%" scope="col">Oportunidades</th><th scope="col">Pontos de atenção</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" class="it rowh">Brasil</th><td>A NR-1, norma que obriga a empresa a avaliar riscos à saúde mental, pressiona o RH. 56,6% das empresas contratam palestras. Hotéis de luxo já contratam especialistas de fora para criar programas. Encontro e Imersão são os produtos mais bem avaliados aqui</td><td>As empresas gastam R$ 409,69 por funcionário ao ano com bem-estar, disputados por plataformas, consultorias e palestrantes. A empresa retém 25% de imposto sobre palestra e imersão. Vendidos sozinhos, Encontro presencial e Imersão têm potencial de ganho abaixo de US$ 150 por dia de trabalho depois da viagem</td></tr>
+        <tr><th scope="row" class="it rowh">EUA</th><td>55% das empresas pagam coaching para seus líderes. Não encontramos concorrente que use Ayurveda em programas para empresas. Hotéis de Miami pagam empresas de fora para conduzir programas de bem-estar (EDITION, Carillon). É onde o Protocolo tem a melhor avaliação</td><td>A parcela de empresas com programa geral de bem-estar caiu de 53% para 39%. O órgão de defesa do consumidor (FTC) exige evidência para qualquer afirmação sobre saúde. Os hotéis americanos que compraram Ayurveda de fora contrataram uma marca conhecida (Chopra)</td></tr>
+        <tr><th scope="row" class="it rowh">Reino Unido</th><td>Retiros para empresas de £3.500 a £15.000 por grupo. Só 30% das empresas treinam seus gestores para cuidar das equipes. É onde a Imersão tem a melhor avaliação</td><td>Regras rígidas de publicidade, com orientação sobre menopausa desde agosto de 2026. Massagem exige licença local. Vendidos sozinhos, Encontro e Imersão têm potencial de ganho abaixo de US$ 200 por dia de trabalho depois da viagem</td></tr>
+        <tr><th scope="row" class="it rowh">Alemanha</th><td>As seguradoras públicas de saúde gastaram €282 milhões em ações dentro das empresas, e programas certificados dão isenção de imposto de até €600 por funcionário ao ano. Mulheres têm 431 dias de afastamento por saúde mental para cada 266 dos homens</td><td>A lei reserva diagnóstico e cura a profissionais de saúde habilitados (Heilpraktiker). A isenção de imposto exige certificar o programa. É preciso falar alemão</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 24 Mercados B -->
+  <section class="slide" data-ch="NO.O6 · Países" data-title="Países: Espanha, Portugal, Emirados, Itália">
+    <h2 class="title"><span class="it">o que muda de um país para outro</span><span class="caps">Por país</span></h2>
+    <table class="dense">
+      <thead><tr><th style="width:13%" scope="col">País</th><th style="width:45%" scope="col">Oportunidades</th><th scope="col">Pontos de atenção</th></tr></thead>
+      <tbody>
+        <tr><th scope="row" class="it rowh">Espanha</th><td>Imóveis ligados ao bem-estar crescem 46,1% ao ano, e Ibiza concentra a oferta de luxo. Palestras de €2.000 a €10.000</td><td>Poucas compras de empresas registradas. As regras sobre Ayurveda mudam de uma região para outra</td></tr>
+        <tr><th scope="row" class="it rowh">Portugal</th><td>Retiro ayurvédico a partir de €4.465 por pessoa no Six Senses Douro. Condomínios de alto padrão com programa para moradores, como em Comporta. A língua portuguesa</td><td>As empresas gastam de €50 a €150 por funcionário ao ano com bem-estar. A lei de terapias alternativas não lista o Ayurveda. Não achamos empresas comprando imersões</td></tr>
+        <tr><th scope="row" class="it rowh">Emirados</th><td>Condomínios de alto padrão voltados à longevidade, em Dubai Marina, ainda sem programa de bem-estar. 58% dos funcionários procuram outro emprego, e reter gente é o motivo da compra</td><td>A autoridade de saúde de Dubai regula o Ayurveda como medicina tradicional, incluindo respiração (pranayama) e meditação. Um advogado local precisa confirmar se desenhar o programa e treinar a equipe exige licença. Vendidos sozinhos, Encontro e Imersão têm potencial negativo, por causa da viagem</td></tr>
+        <tr><th scope="row" class="it rowh">Itália</th><td>Na Lombardia, a lista oficial de atividades classifica técnicas manuais ayurvédicas como atividade não médica. Hotéis recebem programas criados por empresas de fora (The Ranch no Palazzo Fiuggi, a rede Preferred com 11 hotéis). Encontro e Imersão têm potencial de ganho de US$ 2.318 e US$ 1.537 por dia de trabalho</td><td>A associação dos médicos trata a medicina ayurvédica como ato médico. Hotéis como Mirabell e Engel Ayurpura já têm equipe ayurvédica própria. Para não ter imposto retido, sua empresa precisa apresentar o formulário do acordo fiscal entre Itália e EUA</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 25 Encerramento -->
+  <section class="slide sand center" data-ch="Encerramento" data-title="Em síntese">
+    <p class="lbl" style="margin-bottom:28px">Em síntese</p>
+    <p class="statement">Protocolo, Imersão e Encontro: <em>um método</em>, três formas de chegar a quem contrata.</p>
+    <p class="lead" style="margin-top:32px">Uma pergunta para você: esses três produtos são os mais efetivos e relevantes para o seu trabalho?</p>
+    <div class="mono" style="align-self:stretch">
+      <span class="big">O&nbsp;S</span>
+      <span class="tag">Ancient rituals <i>for</i><br>radiant living</span>
+    </div>
+  </section>
+
+  <!-- Índice -->
+  <nav class="index" id="index" aria-label="Índice de slides" aria-hidden="true">
+    <h2 class="title"><span class="it">todos os slides</span><span class="caps">Índice</span></h2>
+    <ol id="index-list"></ol>
+    <p class="hint">Setas ou espaço para avançar · I para o índice · F para tela cheia · Esc para fechar</p>
+  </nav>
+
+  <footer class="chrome-bottom">
+    <div class="track" aria-hidden="true"><span class="fill" id="fill"></span></div>
+    <div class="left">
+      <button class="paren" id="prev" aria-label="Slide anterior">( ANTERIOR )</button>
+    </div>
+    <span class="count" id="count" aria-live="polite"></span>
+    <div class="right">
+      <button class="paren" id="next" aria-label="Próximo slide">( PRÓXIMO )</button>
+      <button class="paren" id="toggle-index" aria-controls="index" aria-expanded="false">( ÍNDICE )</button>
+      <button class="paren" id="fs">( TELA CHEIA )</button>
+    </div>
+  </footer>
+</main>
+</div>
+
+<script>
+(function(){
+  const root = document.documentElement;
+  const stage = document.getElementById('stage');
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  const N = slides.length;
+  const $ = id => document.getElementById(id);
+  const pad = n => String(n).padStart(2,'0');
+  const no = n => 'NO.' + pad(n).replace(/^0/,'O');
+  let i = 0;
+
+  // Rótulos de coluna para as tabelas empilhadas no celular
+  document.querySelectorAll('table').forEach(t => {
+    const hs = Array.from(t.querySelectorAll('thead th')).map(th => th.textContent.trim());
+    t.querySelectorAll('tbody tr').forEach(tr => Array.from(tr.children).forEach((td, c) => { if (hs[c]) td.setAttribute('data-l', hs[c]); }));
+  });
+
+  // Índice e marcas de capítulo
+  const list = $('index-list');
+  slides.forEach((s, k) => {
+    s.setAttribute('aria-roledescription','slide');
+    s.setAttribute('aria-label', (k+1) + ' de ' + N + ': ' + s.dataset.title);
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#' + (k+1);
+    a.innerHTML = '<span class="n">' + no(k+1) + '</span><span class="t"></span>';
+    a.querySelector('.t').textContent = s.dataset.title;
+    a.addEventListener('click', e => { e.preventDefault(); closeIndex(); go(k); });
+    li.appendChild(a); list.appendChild(li);
+  });
+  const track = document.querySelector('.track');
+  slides.forEach((s, k) => {
+    if (k > 0 && s.dataset.ch !== slides[k-1].dataset.ch && s.dataset.ch !== 'Encerramento') {
+      const t = document.createElement('span');
+      t.className = 'tick';
+      t.style.left = (k / (N-1) * 100) + '%';
+      track.appendChild(t);
+    }
+  });
+
+  function go(k){
+    i = Math.max(0, Math.min(N-1, k));
+    slides.forEach((s, k2) => {
+      const on = k2 === i;
+      s.classList.toggle('is-active', on);
+      s.setAttribute('aria-hidden', on ? 'false' : 'true');
+      s.inert = !on && !root.classList.contains('flow');
+    });
+    $('count').textContent = pad(i+1) + ' / ' + pad(N);
+    $('chapter').textContent = slides[i].dataset.ch.toUpperCase();
+    $('fill').style.width = (N > 1 ? i/(N-1)*100 : 100) + '%';
+    $('prev').disabled = i === 0;
+    $('next').disabled = i === N-1;
+    stage.classList.toggle('on-sand', slides[i].classList.contains('sand'));
+    list.querySelectorAll('a').forEach((a, k2) => a.setAttribute('aria-current', k2 === i ? 'true' : 'false'));
+    if (location.hash !== '#' + (i+1)) history.replaceState(null, '', '#' + (i+1));
+  }
+
+  const idx = $('index');
+  function openIndex(){ idx.classList.add('open'); idx.setAttribute('aria-hidden','false'); idx.inert = false; $('toggle-index').setAttribute('aria-expanded','true'); const cur = list.querySelector('[aria-current="true"]'); cur && cur.focus(); }
+  function closeIndex(){ idx.classList.remove('open'); idx.setAttribute('aria-hidden','true'); idx.inert = true; $('toggle-index').setAttribute('aria-expanded','false'); }
+  const isOpen = () => idx.classList.contains('open');
+  idx.inert = true;
+
+  function fullscreen(){
+    if (!document.fullscreenElement) document.documentElement.requestFullscreen && document.documentElement.requestFullscreen();
+    else document.exitFullscreen && document.exitFullscreen();
+  }
+  document.addEventListener('fullscreenchange', () => { $('fs').textContent = document.fullscreenElement ? '( SAIR DA TELA CHEIA )' : '( TELA CHEIA )'; });
+
+  $('prev').addEventListener('click', () => go(i-1));
+  $('next').addEventListener('click', () => go(i+1));
+  $('toggle-index').addEventListener('click', () => isOpen() ? closeIndex() : openIndex());
+  $('fs').addEventListener('click', fullscreen);
+
+  document.addEventListener('keydown', e => {
+    if (root.classList.contains('flow') || e.altKey || e.ctrlKey || e.metaKey) return;
+    const k = e.key;
+    if (k === 'Escape' && isOpen()) { closeIndex(); return; }
+    if (k === 'i' || k === 'I') { isOpen() ? closeIndex() : openIndex(); return; }
+    if (k === 'f' || k === 'F') { fullscreen(); return; }
+    if (isOpen()) return;
+    if (k === 'ArrowRight' || k === 'ArrowDown' || k === 'PageDown' || (k === ' ' && !e.shiftKey)) { e.preventDefault(); go(i+1); }
+    else if (k === 'ArrowLeft' || k === 'ArrowUp' || k === 'PageUp' || (k === ' ' && e.shiftKey)) { e.preventDefault(); go(i-1); }
+    else if (k === 'Home') { e.preventDefault(); go(0); }
+    else if (k === 'End') { e.preventDefault(); go(N-1); }
+  });
+
+  // Toque: deslizar para os lados
+  let x0 = null;
+  stage.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, {passive:true});
+  stage.addEventListener('touchend', e => {
+    if (x0 === null || root.classList.contains('flow')) return;
+    const dx = e.changedTouches[0].clientX - x0; x0 = null;
+    if (Math.abs(dx) > 50) go(dx < 0 ? i+1 : i-1);
+  });
+
+  // Escala do palco ou modo fluxo
+  const mq = window.matchMedia('(max-width: 760px), (max-width: 1024px) and (orientation: portrait)');
+  function fit(){
+    const flow = mq.matches;
+    root.classList.toggle('flow', flow);
+    if (flow) { slides.forEach(s => { s.inert = false; }); return; }
+    const s = Math.min(window.innerWidth / 1600, window.innerHeight / 900);
+    stage.style.setProperty('--s', s);
+    go(i);
+  }
+  window.addEventListener('resize', fit);
+  // Impressão: sempre um slide por página, nunca o modo de celular
+  window.addEventListener('beforeprint', () => { root.classList.remove('flow'); slides.forEach(s => { s.inert = false; }); });
+  window.addEventListener('afterprint', fit);
+  mq.addEventListener && mq.addEventListener('change', fit);
+  window.addEventListener('hashchange', () => { const n = parseInt(location.hash.slice(1),10); if (n && n-1 !== i) go(n-1); });
+
+  const start = parseInt(location.hash.slice(1),10);
+  i = (start >= 1 && start <= N) ? start-1 : 0;
+  fit(); go(i);
+})();
+</script>
+</body>
+</html>
