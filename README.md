@@ -23,9 +23,9 @@ Depois acesse `http://localhost:5173`.
 | `index.html` | o site inteiro: HTML, CSS, imagens e favicon no mesmo arquivo |
 | `404.html` | página de endereço não encontrado |
 | `og.png` | imagem de compartilhamento em redes sociais |
-| `fonts/` | Arimo e Carlito em woff2, com as licenças, usadas pela `404.html` |
+| `fonts/` | Arimo e Carlito em woff2, com as licenças |
 
-Não há build nem dependências. O `index.html` carrega as fontes Archivo e Lato do Google Fonts.
+Não há build nem dependências. O site usa Arial e Calibri, com Arimo e Carlito servidas de `fonts/` onde elas não existem.
 
 ## Conteúdo
 
@@ -33,14 +33,14 @@ A página segue esta ordem:
 
 | Seção | Assunto |
 |---|---|
-| Hero | Growth Partner com foco em soluções de inteligência |
-| Para quem | Dono de PME, gestor de mídia ou growth, agência independente |
+| Hero | Inteligência para decidir, com clareza |
 | A tese | O marketing aprendeu a medir o consumidor melhor do que aprendeu a entendê-lo |
 | As três camadas | Mercado, negócio e comportamento |
 | O método | Oito etapas, da informação à ação |
 | Dois índices | Índice de Viabilidade (etapa do método) e Índice de Esforço (produto) |
 | A camada digital | Prateleira Digital, Digital Discoverability e Digital Activation |
 | Produtos | Leitura de mercado, leitura de demanda e decisão |
+| Para quem | Dono de PME, gestor de mídia ou growth, agência independente |
 | Como você contrata | Projeto ou Parceria Contínua, com pool de parceiros |
 | Fechamento | Melhorar a decisão antes de melhorar o indicador |
 
